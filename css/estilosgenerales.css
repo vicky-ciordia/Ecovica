@@ -1,0 +1,539 @@
+@charset "UTF-8";
+/* GENERALES  –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* SECCION 1  –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+#conocenos_grid {
+  display: grid;
+  grid-template-columns: 20% 30% 30% 20%;
+  grid-template-rows: 35vh 40vh 25vh auto; }
+  #conocenos_grid #fondo_verde {
+    grid-column: 3/5;
+    grid-row: 1/5;
+    background-color: #A3ADA5;
+    z-index: -800; }
+  #conocenos_grid .titulo_secciones {
+    grid-column: 1/5;
+    grid-row: 1/2;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 7rem 10rem 2rem 0;
+    margin: 0;
+    color: #F2EEE8; }
+  #conocenos_grid #presentacion_vicky, #conocenos_grid #presentacion_cami {
+    grid-column: 1/3;
+    grid-row: 4/5;
+    max-width: 100%;
+    padding: 2rem 0 4rem 0; }
+    #conocenos_grid #presentacion_vicky .parrafo_destacado, #conocenos_grid #presentacion_cami .parrafo_destacado {
+      padding: 0 4rem 4rem 10rem; }
+  #conocenos_grid #presentacion_cami {
+    grid-column: 3/5;
+    grid-row: 4/5; }
+    #conocenos_grid #presentacion_cami .parrafo_destacado {
+      padding: 0 10rem 0 4rem;
+      color: #F2EEE8; }
+    #conocenos_grid #presentacion_cami .nombre_de_producto {
+      padding-left: 4rem;
+      color: #F2EEE8; }
+  #conocenos_grid #presentacion_foto {
+    grid-column: 2/4;
+    grid-row: 2/4;
+    width: 100%;
+    overflow: hidden;
+    align-items: flex-start; }
+    #conocenos_grid #presentacion_foto img {
+      width: 100%; }
+  #conocenos_grid #nombre_conocenos_vicky, #conocenos_grid #nombre_conocenos_cami {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0;
+    padding-right: 10rem;
+    margin: 0;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    justify-self: left; }
+  #conocenos_grid #nombre_conocenos_cami {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    padding-left: 10rem;
+    justify-self: right; }
+  #conocenos_grid .nombres_conocenos {
+    color: #3A4D43;
+    font-family: 'Brygada 1918', serif;
+    font-size: 3rem;
+    font-weight: lighter;
+    text-align: end;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0;
+    margin: 0; }
+  #conocenos_grid #nombre_conocenos_cami {
+    color: #F2EEE8; }
+  #conocenos_grid .nombre_de_producto {
+    text-align: left;
+    padding-left: 10rem; }
+
+/* FRASE –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+#frase_conocenos {
+  background-color: #C9C2B1;
+  height: auto;
+  padding: 3rem 10rem;
+  font-family: 'Brygada 1918', serif; }
+  #frase_conocenos h4 {
+    font-size: 3vw;
+    color: #F1EDE7;
+    text-align: center; }
+
+/* NUESTROS CAMBIOS  –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+#nuestros_cambios {
+  padding: 3rem 10rem 5rem 10rem;
+  max-width: 100vw; }
+  #nuestros_cambios .subtitulo {
+    display: flex;
+    flex-direction: row;
+    max-width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1vw;
+    color: #3A4D43; }
+    #nuestros_cambios .subtitulo__miscelanea {
+      width: auto;
+      padding-right: 1rem;
+      font-family: 'Brygada 1918', serif;
+      font-size: 2vw; }
+    #nuestros_cambios .subtitulo__linea {
+      height: 0;
+      border-bottom: 1px solid #3A4D43;
+      width: 50%;
+      padding: 0 1rem; }
+    #nuestros_cambios .subtitulo__texto {
+      font-size: 2vw;
+      padding-left: 1rem;
+      width: auto;
+      font-family: 'Brygada 1918', serif;
+      font-size: 2vw; }
+  #nuestros_cambios .productos_contenido_grid {
+    margin: 0; }
+  #nuestros_cambios .productos_contenido {
+    grid-template-columns: repeat(4, 22.375%);
+    grid-template-rows: 2vh auto 2vh;
+    padding-top: 2rem;
+    margin: 0; }
+  #nuestros_cambios .cambios_recuadro {
+    padding: 1rem 2rem; }
+  #nuestros_cambios .nombre_de_producto {
+    color: #F1EDE7;
+    padding: .7rem;
+    margin: 0;
+    border-bottom: 1px solid #F1EDE7; }
+  #nuestros_cambios .detalle_de_producto {
+    padding: .7rem 0; }
+  #nuestros_cambios #cambio_1 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-color: #A2ACA4;
+    color: #F1EDE7; }
+  #nuestros_cambios #cambio_2 {
+    grid-column: 2/3;
+    grid-row: 2/4;
+    background-color: #C9C2B1;
+    color: #F1EDE7; }
+  #nuestros_cambios #cambio_3 {
+    grid-column: 3/4;
+    grid-row: 1/3;
+    background-color: #A2ACA4;
+    color: #F1EDE7; }
+  #nuestros_cambios #cambio_4 {
+    grid-column: 4/5;
+    grid-row: 2/4;
+    background-color: #C9C2B1;
+    color: #F1EDE7; }
+
+/* PREGUNTAS FRECUENTES –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+#preguntas_frecuentes_pagina #preguntas_frecuentes_home {
+  background-color: #3A4D43;
+  padding: 6rem 10rem 4rem; }
+
+#preguntas_frecuentes_pagina .titulo_secciones, #preguntas_frecuentes_pagina h4, #preguntas_frecuentes_pagina p {
+  color: #F2EEE8; }
+
+#preguntas_frecuentes_pagina .titulo_secciones {
+  margin: 2rem 0 1rem 0;
+  padding: 1rem 0;
+  height: 20%; }
+
+#preguntas_frecuentes_pagina .busqueda {
+  border-bottom: 1px solid #F2EEE8;
+  background: none;
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0;
+  margin-bottom: 3rem; }
+  #preguntas_frecuentes_pagina .busqueda__texto {
+    text-decoration: none;
+    background-color: #3A4D43;
+    color: #F2EEE8;
+    padding: .8rem 1rem;
+    font-size: .8rem;
+    font-weight: lighter;
+    background: none;
+    border: none;
+    width: 90%;
+    letter-spacing: .1rem; }
+  #preguntas_frecuentes_pagina .busqueda__texto::placeholder {
+    font-size: .8rem;
+    font-weight: lighter;
+    letter-spacing: .1rem; }
+  #preguntas_frecuentes_pagina .busqueda__texto:focus {
+    color: #F2EEE8; }
+  #preguntas_frecuentes_pagina .busqueda__lupa {
+    text-decoration: none;
+    background: none;
+    border: none;
+    background-color: #3A4D43;
+    padding: 0 1rem;
+    width: 5%;
+    border-right: 1px solid #F2EEE8;
+    margin: .4rem 0; }
+    #preguntas_frecuentes_pagina .busqueda__lupa img {
+      max-width: 100%; }
+
+#preguntas_frecuentes_pagina .preguntas_frecuentes_encabezado {
+  padding-bottom: 0; }
+  #preguntas_frecuentes_pagina .preguntas_frecuentes_encabezado div {
+    border-bottom: 1px solid #F2EEE8; }
+  #preguntas_frecuentes_pagina .preguntas_frecuentes_encabezado h4 {
+    font-size: 4.4vw;
+    padding-right: .7rem; }
+
+#preguntas_frecuentes_pagina .accordion-button {
+  background-color: #3A4D43;
+  color: #F2EEE8; }
+
+#preguntas_frecuentes_pagina .accordion-header {
+  background-color: #3A4D43;
+  padding-bottom: 1rem; }
+
+#preguntas_frecuentes_pagina .accordion-body {
+  background-color: #3A4D43;
+  color: #F2EEE8;
+  font-size: .9rem;
+  line-height: 1.5rem;
+  padding-left: 2rem; }
+
+#preguntas_frecuentes_pagina .accordion-button:not(.collapsed) {
+  color: #F2EEE8;
+  background-color: #3A4D43; }
+
+#preguntas_frecuentes_pagina .accordion-button:not(.collapsed)::after {
+  color: #F2EEE8;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"); }
+
+#preguntas_frecuentes_pagina .accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"); }
+
+#preguntas_frecuentes_pagina .preguntas_frecuentes_respuesta {
+  background-color: #3A4D43; }
+
+/* TU PREGUNTA –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+#tu_pregunta {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #A3ADA5;
+  margin: 0;
+  padding: 3rem 10rem 5rem 10rem; }
+  #tu_pregunta #tu_pregunta_texto {
+    width: 50%; }
+    #tu_pregunta #tu_pregunta_texto .parrafo_destacado {
+      font-size: 1rem;
+      color: #F2EEE8; }
+  #tu_pregunta #tu_pregunta_form {
+    width: 40%; }
+    #tu_pregunta #tu_pregunta_form form {
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+      align-content: center;
+      padding: 2rem 0; }
+      #tu_pregunta #tu_pregunta_form form .datos_form {
+        width: 100%;
+        margin-bottom: 2rem; }
+      #tu_pregunta #tu_pregunta_form form .textarea {
+        max-width: 100%;
+        height: 20vh;
+        padding: 0;
+        margin: 0;
+        border: 1px solid #F2EEE8;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
+        color: #F2EEE8;
+        padding: 1rem;
+        letter-spacing: .1rem; }
+      #tu_pregunta #tu_pregunta_form form .textarea::placeholder {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
+        color: #F2EEE8;
+        font-weight: lighter;
+        font-size: 1rem; }
+      #tu_pregunta #tu_pregunta_form form .form_botones__boton {
+        width: 80%;
+        padding: 1rem;
+        margin: auto; }
+  #tu_pregunta .encabezado_secciones__subtitulos {
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 2rem;
+    color: #F2EEE8;
+    text-align: left; }
+
+/* TITULOS GENERALES –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+.encabezado_secciones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3rem 0; }
+  .encabezado_secciones__subtitulos {
+    color: #3A4D43;
+    font-family: 'Brygada 1918', serif;
+    font-size: 5vw;
+    font-weight: lighter;
+    text-align: end; }
+  .encabezado_secciones__numeros {
+    color: #3A4D43;
+    font-family: 'Brygada 1918', serif;
+    font-size: 5vw;
+    font-weight: lighter;
+    text-align: start; }
+  .encabezado_secciones__subtitulos--blanco {
+    color: #F2EEE8;
+    font-family: 'Brygada 1918', serif;
+    font-size: 5vw;
+    font-weight: lighter; }
+
+/* FORM –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+.form_botones {
+  margin: auto; }
+  .form_botones__boton {
+    padding: .8rem;
+    background: none;
+    border: 1px solid #F2EEE8;
+    width: 30%;
+    color: #F2EEE8;
+    letter-spacing: .1rem;
+    margin: 1rem 1rem 0 1rem; }
+  .form_botones__boton:hover {
+    background-color: #F2EEE8;
+    color: #3A4D43; }
+
+.carta_texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 100%;
+  max-height: 100%;
+  transition: scale 2s; }
+  .carta_texto__titulo {
+    color: #3A4D43;
+    font-family: 'Brygada 1918', serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 2rem; }
+  .carta_texto__parrafo {
+    color: #A3ADA5;
+    font-family: 'Brygada 1918', serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0 auto;
+    padding-top: 1rem;
+    text-align: center;
+    line-height: 1.4rem; }
+
+/* MENU –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+.header {
+  background-color: #F2EEE8;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  align-items: center;
+  z-index: 999; }
+  .header__logo {
+    padding: 1rem 2rem; }
+    .header__logo img {
+      margin: auto;
+      height: 4vh; }
+  .header__menu {
+    padding: .5rem 2rem; }
+    .header__menu li {
+      display: inline-block;
+      text-align: center; }
+      .header__menu li a {
+        position: relative;
+        font-size: .8rem;
+        font-weight: 400;
+        margin: 0 2rem;
+        padding: .5rem 0.5rem;
+        color: #3A4D43;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bolder;
+        text-transform: uppercase; }
+      .header__menu li a::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: #3A4D43;
+        z-index: 1;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.5s ease-in-out; }
+      .header__menu li a:hover::before {
+        transform: scaleX(1); }
+
+/* ANIMACIÓN
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+#menu[data-animation="bonus"] a::before {
+  transform-origin: right; }
+
+#menu[data-animation="bonus"] a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94); }
+
+/* FOOTER –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+#footer {
+  background-color: #3A4D43;
+  margin: 0;
+  padding: 3rem 0rem 4rem 0rem; }
+  #footer .contacto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0; }
+    #footer .contacto__redes {
+      display: flex;
+      flex-direction: row;
+      padding: 1rem 0 1rem 1rem;
+      justify-content: center;
+      width: auto; }
+    #footer .contacto h3 {
+      margin: 0;
+      color: #A3ADA5;
+      font-family: 'Brygada 1918', serif;
+      font-size: 2vw;
+      text-align: left;
+      padding-right: 2rem; }
+    #footer .contacto__linea {
+      width: 20%;
+      height: 0;
+      padding: 0;
+      border-bottom: 1px solid #A3ADA5; }
+    #footer .contacto__iconos {
+      display: flex;
+      align-content: center;
+      width: 1.3vw;
+      height: 1.3vw;
+      border: 1px solid  #F2EEE8;
+      border-radius: 100%;
+      padding: 1vw;
+      margin-left: 1rem; }
+      #footer .contacto__iconos img {
+        width: 100%;
+        vertical-align: inherit; }
+  #footer p {
+    margin: 0;
+    color: white;
+    font-size: .8vw;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center; }
+
+/* MENU PRODUCTOS –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+.menu_productos {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  justify-self: right;
+  margin-top: 5rem;
+  padding: 0;
+  padding-right: 3vw; }
+  .menu_productos__opciones {
+    display: block;
+    color: #3A4D43;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: .6rem;
+    border-bottom: 1px solid  #3A4D43; }
+  .menu_productos__opciones:hover {
+    font-weight: bold; }
+
+/**RESPONSIVE*/
+/**HOME*/
+@media only screen and (max-width: 1200px) {
+  /**MENÚ*/
+  .header__menu {
+    display: none; }
+    .header__menu ul li a {
+      font-size: .6rem;
+      padding: .6rem 1rem; }
+  .header__logo {
+    margin: auto;
+    max-width: 80%; }
+    .header__logo img {
+      max-width: 80%; } }
+
+/**RESPONSIVE PUNTO MEDIO*/
+@media only screen and (max-width: 720px) {
+  #footer {
+    padding: 2rem 1.5rem 3rem; }
+    #footer .contacto {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: .5rem; }
+      #footer .contacto__redes {
+        display: flex;
+        flex-direction: row;
+        padding: 1.5rem 0 1rem 0;
+        justify-content: center;
+        width: 40%; }
+      #footer .contacto h3 {
+        font-size: 1.4rem;
+        text-align: center;
+        padding: 1rem 2rem; }
+      #footer .contacto__linea {
+        width: 20%;
+        height: 0;
+        padding: 0;
+        border-bottom: 1px solid #A3ADA5; }
+      #footer .contacto__iconos {
+        width: 2.4vw;
+        height: 2.4vw;
+        padding: 1.3vw;
+        margin: 1vw; }
+        #footer .contacto__iconos img {
+          margin: auto; }
+    #footer p {
+      font-size: 0.6rem; } }
+
+/**RESPONSIVE CELULAR*/
+/**HOME*/
+@media only screen and (max-width: 480px) {
+  .contacto__iconos {
+    width: 5vw;
+    height: 5vw;
+    padding: 2.3vw; } }

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ecovica es un emprendimiento que vende productos ecológicos para el cuidado personal y otros">
+    <meta name="keywords"  content="productos, ecología, cuidado personal, higiene, venta, compra, Ecovica">
+        <title>Ecovica, productos ecológicos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Brygada+1918&family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/estilosgenerales.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="header__logo">
+            <img src="imagenes/ecovica-logo.svg">
+        </a>
+        
+        <!--MENU-->
+        <nav  class="header__menu">
+            <ul data-animation="bonus" id="menu">
+                <li> <a href="index.html">Home</a>
+                </li>
+                <li> <a href="productos.html">Productos</a>
+                </li>
+                <li><a href="conocenos.html">Conocenos</a></li>
+                <li><a href="faq.html">Preguntas frecuentes</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--SECCIÓN COMING SOON-->
+    <section id="section_coming_soon">
+        <div id="coming_soon">
+            <div id="coming_soon_texto" data-aos="fade-up" data-aos-duration="1500">
+                <h3>COMING SOON</h3>
+                <h1>Perfumes naturales</h1>
+                <p class="parrafo_destacado">Pasalo por tu cuello, muñecas o sien y recibí todas sus propiedades.
+                    <br> ¡Además vienen en frasco de vidrio recargable!
+                </p>
+                <a href="productos.html" class="boton_ver_mas">¡Conocé más!</a>
+            </div>
+            <div id="coming_soon_imagen" class="animate__animated animate__slideInRight">
+                <div id="coming_soon_imagen_div">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="imagenes/perfume-rose.png" class="d-block w-100" alt="Perfume Rosé">
+                            <p class="nombre_de_producto" id="rose">- Rose -</p>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="imagenes/perfume-prim.png" class="d-block w-100" alt="Perfume Prim">
+                            <p class="nombre_de_producto" id="prim">- Prim -</p>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="imagenes/perfume-mai.png" class="d-block w-100" alt="Perfume Mai">
+                            <p class="nombre_de_producto" id="mai">- Mai -</p>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--PRODUCTOS-->
+    <section id="novedades">
+        <div class="encabezado_secciones" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+            <h2 class="encabezado_secciones__numeros">01</h2>
+            <h2 class="encabezado_secciones__subtitulos">__ Productos</h2>
+        </div>
+        <div class="productos_contenido_grid">
+            <div class="productos_contenido" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <div id="producto_1" class="contenedor_productos">
+                    <div class="imagenes_de_productos">
+                        <img src="imagenes/jabon-solido-index.jpg" alt="Jabón sólido">
+                    </div>
+                    <div class="productos_contenedor_textos">
+                        <p class="nombre_de_producto">- Shampoo sólido -</p>
+                        <p class="detalle_de_producto">Shampoo sólido para cabello graso o mixto.</p>
+                    </div>
+                </div>
+                <div id="producto_2" class="contenedor_productos">
+                    <div class="productos_contenedor_textos">
+                        <p class="nombre_de_producto">- Crema Hidratante - </p>
+                        <p class="detalle_de_producto">Humecta y reafirma naturalmente la piel.</p>
+                    </div>
+                    <div class="imagenes_de_productos">
+                        <img src="imagenes/crema-corporal.jpeg" alt="Crema corporal">
+                    </div>
+                </div>
+                <div id="producto_3" class="contenedor_productos">
+                    <div class="imagenes_de_productos">
+                        <img src="imagenes/perfume-natural.jpeg" alt="Perfume natural">
+                    </div>
+                    <div class="productos_contenedor_textos">
+                        <p class="nombre_de_producto">- Tónicos -</p>
+                        <p class="detalle_de_producto">Aporta frescura e hidratación a la piel.</p>
+                    </div>
+                </div>
+                <div id="producto_8" class="contenedor_productos">
+                    <div class="productos_contenedor_textos">
+                        <p class="nombre_de_producto">- Cepillo de bamboo -</p>
+                        <p class="detalle_de_producto">Cepillo de dientes de bambu suave.</p>
+                    </div>
+                    <div class="imagenes_de_productos">
+                        <img src="imagenes/cepillo-bamboo.jpeg" alt="Cepillo de bamboo">
+                    </div>
+                </div>
+            </div>
+            <a href="productos.html" class="boton_ver_mas animate__animated animate__fadeInUp"> ¡Más productos!</a>
+        </div>
+    </section>
+
+
+    <!--CONOCENOS-->
+    <section>
+        <div id="conocenos_home">
+            <div id="conocenos_contenedor_imagen">
+                <img src="imagenes/vickycami_home.jpeg" alt="Vicky y Cami">
+            </div>
+            <div id="conocenos_contenedor_texto" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <div class="encabezado_secciones">
+                    <h2 class="encabezado_secciones__numeros">02</h2>
+                    <h2 class="encabezado_secciones__subtitulos">__ Nosotras</h2>
+                </div>
+                <p class="parrafo_destacado">Nosotras somos Vicky y Cami, dos hermanas que se unieron en el 2019 para
+                    ayudar al medioambiente a través del uso de productos ecológicos. Juntas creamos Ecovica, que nace
+                    con la idea de cuidar entre todos al planeta, a partir de pequeños cambios en nuestros hábitos. A lo
+                    largo de estos años nos fuimos multiplicando y hoy formamos una gran comunidad <i>Ecoviquera</i>,
+                    que crece cada día más. Somos fieles creyentes de que cada granito de arena, por más pequeño que
+                    sea, produce grandes cambios. ¿Te animás a sumar el tuyo?</p>
+                <a href="conocenos.html" class="boton_ver_mas"> Leé toda nuestra historia</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!--PREGUNTAS FRECUENTES-->
+    <section id="preguntas_frecuentes_home">
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+            <div class="encabezado_secciones">
+                <h2 class="encabezado_secciones__numeros">03</h2>
+                <h2 class="encabezado_secciones__subtitulos">__ Preguntas frecuentes</h2>
+            </div>
+
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item preguntas_frecuentes">
+                    <div class="preguntas_frecuentes_encabezado accordion-header" id="flush-headingOne">
+                        <h4>1</h4>
+                        <div>
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false"
+                            aria-controls="flush-collapseOne">
+                                <p>¿Cómo reutilizo mi cepillo de bambú?</p>
+                           
+                        </button>
+                    </div>
+                    </div>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse preguntas_frecuentes_respuesta"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Los odontólogos recomiendan cambiar de cepillo cada 3 meses.
+                                Con el tiempo las cerdas pierden eficiencia. Además, el cepillado genera que se
+                                cultiven bacterias en el cabezal del cepillo. Una vez que termines de utilizar el
+                                producto, separá las cerdas con una pinza y descartalas junto con tus residuos
+                                reciclables. Tanto el packaging como el mango pueden ser compostados.
+                                <br>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/V08OqdC1MYE"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            </div>
+                        </div>
+                </div>
+                <div class="accordion-item preguntas_frecuentes">
+                    <div class="preguntas_frecuentes_encabezado accordion-header" id="flush-headingTwo">
+                        <h4>2</h4>
+                        <div>
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                    <p>¿Cuánto tiempo puede durar mi jabón sólido?</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse preguntas_frecuentes_respuesta"
+                        aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Si bien la mayoría de las marcas fabricadas pueden durar 2 años
+                            o más, algunos fabricantes de jabón hecho a mano recomiendan usar sus jabones en el
+                            primer año después de la compra. Esto se debe a que los ingredientes naturales de
+                            algunos jabones pueden ponerse rancios o mohosos.</div>
+                    </div>
+                </div>
+                <div class="accordion-item preguntas_frecuentes">
+                    <div class="preguntas_frecuentes_encabezado accordion-header" id="flush-headingThree">
+                        <h4>3</h4>
+                        <div>
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                    <p>¿Cuáles son los beneficios de usar shampoo sólido?</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse preguntas_frecuentes_respuesta"
+                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">En comparación con un shampoo sintético, son Biodegradables,
+                            veganos, no están testeados en animales y están libres de parabenos. Tampoco contienen
+                            sulfatos (APTO LOW POO) y vienen envueltos en papel Folex, por lo que es 100%
+                            biodegradable. Por último, no tienen tiempo de depuración/adaptación.</div>
+                    </div>
+                </div>
+              </div>
+
+              <a href="preguntas-frecuentes.html" class="boton_ver_mas"> ¿Tenés otra pregunta? </a>
+        
+            </div>
+        </section>
+
+
+<!--RECIBI OFERTAS-->
+    <section>
+        <div id="newsletter">
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <h2 class="encabezado_secciones__subtitulos">Suscribite para recibir todas nuestras novedades</h2>
+            </div>
+            <div id="newsletter_form" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <form action="email.php">
+                    <input type="text" placeholder="Escribí tu mail" class="datos_form">
+                    <br>
+                    <div class="form_botones">
+                        <input type="submit" value="Suscribite" class="form_botones__boton">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!--FOOTER-->
+    <footer id="footer">
+        <div class="contacto">
+            <h3>Sigamos conectados</h3>
+            <div class="contacto__linea"></div>
+            <div class="contacto__redes">
+            <a class="contacto__iconos"href="https://www.instagram.com/mecovica/" ><img src="imagenes/instagram.svg" alt="Logo de Instagram"></a>
+            <a class="contacto__iconos" href="https://www.tiktok.com/@mecovica" ><img src="imagenes/tik-tok.svg" alt="Logo de Tik Tok"> </a>
+            </div>
+        </div>
+        <p>Copyright Ecovica - 2021. Todos los derechos reservados.</p>
+    </footer> 
+
+
+
+    <!--ANIMACION-->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+<!--BOOTSTRAP--> 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script rc="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+
+
+
+
+</body>
+
+</html>
