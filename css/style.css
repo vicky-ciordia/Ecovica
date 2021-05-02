@@ -39,7 +39,7 @@ ol li{
   }
 
 
-.titulo_secciones{
+.TituloSecciones{
     color: #3A4D43;
     font-family: 'Brygada 1918', serif;
     font-size: 5vw;
@@ -59,7 +59,7 @@ ol li{
     
 }
 
-.nombre_de_producto{
+.NombreProducto{
     color: #3A4D43;
     font-size: 1.2rem;
     font-weight: normal;
@@ -67,7 +67,7 @@ ol li{
     text-align: center;
 }
 
-.detalle_de_producto {
+.DetalleProducto {
     font-size: .7rem;
     text-align: center;
 }
@@ -245,7 +245,7 @@ form label{
     max-width: 100%;
 }
 
-#coming_soon_imagen .nombre_de_producto{
+#coming_soon_imagen .NombreProducto{
     margin: 0;
     padding: 1rem 0 0 0;
 }
@@ -486,36 +486,31 @@ form label{
 
 /**PRODUCTOS*/
 
+
+
 #productos{
     margin: 0;
     padding: 3rem;
 }
 
-#productos_grid{
-    display: grid;
-    grid-template-columns: 20% 80%; 
-    grid-template-rows: 8% 92%;
-    padding: 6rem 10rem 4rem;
-    max-width: 100vw;
-}
 
-#productos_grid .titulo_secciones{
+
+.TituloSecciones{
     justify-self: right;
     max-width: 100%;
-    height: auto;
-    grid-column: 1/3;
-    grid-row: 1/2;   
+    margin: 7rem 0 1rem 0;
+    padding: 0rem 10rem 1rem 0;
+    height: 20%;
 }
 
 
-.productos_contenido_grid{
-    grid-column: 2/3;
-    grid-row: 2/3;
+.ProductosContenidoGrid{
     margin-top: 5rem;
     max-width: 100%;
+    padding:0 16rem 3rem 16rem;
 }
 
-.productos_contenido{
+.ProductosContenido{
     display: grid;
     grid-template-columns: 31% 31% 31%;
     grid-template-rows: repeat(4,26vw);
@@ -525,35 +520,35 @@ form label{
     max-height: 100%;
 }
 
-#producto_1{
+#producto1{
     grid-column: 1/2;
     grid-row: 1/2;
     max-width: 100%;
     max-height: 100%;
 }
 
-#producto_2{
+#producto2{
     grid-column: 2/3;
     grid-row: 1/2;
     max-width: 100%;
     max-height: 100%;
 }
 
-#producto_3{
+#producto3{
     grid-column: 3/4;
     grid-row: 1/2;
     max-width: 100%;
     max-height: 100%;
 }
 
-#producto_4{
+#producto4{
     grid-column: 1/2;
     grid-row: 2/3;
     max-width: 100%;
     max-height: 100%;
 }
 
-#producto_5{
+#producto5{
     grid-column: 2/3;
     grid-row: 2/3;
     max-width: 100%;
@@ -561,35 +556,35 @@ form label{
     align-self: center;
 }
 
-#producto_6{
+#producto6{
     grid-column: 3/4;
     grid-row: 2/3;
     max-width: 100%;
     max-height: 100%;
 }
 
-#producto_7{
+#producto7{
     grid-column: 1/2;
     grid-row: 3/4;
     max-width: 100%;
     max-height: 100%;
 }
 
-#producto_8{
+#producto8{
     grid-column: 2/3;
     grid-row: 3/4;
     max-width: 100%;
     max-height: 100%;
 }
 
-#producto_9{
+#producto9{
     grid-column: 3/4;
     grid-row: 3/4;
     max-width: 100%;
     max-height: 100%;
 }
 
-#producto_10{
+#producto10{
     grid-column: 1/2;
     grid-row: 4/5;
     max-width: 100%;
@@ -597,14 +592,14 @@ form label{
     align-self: center;
 }
 
-#producto_11{
+#producto11{
     grid-column: 2/3;
     grid-row: 4/5;
     max-width: 100%;
     max-height: 100%;
 }
 
-#producto_12{
+#producto12{
     grid-column: 3/4;
     grid-row: 4/5;
     max-width: 100%;
@@ -612,7 +607,7 @@ form label{
     align-self: center;
 }
 
-.contenedor_productos {
+.ContenedorProductos {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -621,29 +616,29 @@ form label{
     transition: scale 2s;
 }
 
-.contenedor_productos .imagenes_de_productos{
+.ContenedorProductos .ImagenesProductos{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-height: 86%;
+    max-height: 100%;
     max-width: 100%;
     overflow: hidden;
 }
 
-.contenedor_productos .productos_contenedor_textos{
+.ContenedorProductos .ProductosContenedorTextos{
     max-width: 100%;
     max-height: 10%;
 }
 
-.contenedor_productos .imagenes_de_productos img{
+.ContenedorProductos .ImagenesProductos img{
     max-width: 100%;
 }
 
-.contenedor_productos .imagenes_de_productos img:hover{
+.ContenedorProductos .ImagenesProductos img:hover{
     transform: scale(1.2,1.2);
 }
 
-.contenedor_productos .nombre_de_producto, .detalle_de_producto {
+.ContenedorProductos .NombreProducto, .DetalleProducto {
     margin: 0;
 }
 
@@ -659,26 +654,30 @@ form label{
     max-width:100vw;
 }
 
-#novedades .productos_contenido_grid{
+#novedades .ProductosContenidoGrid{
    margin-top: 1rem;
+   padding:0;
 }
 
-#novedades .productos_contenido{
+#novedades .ProductosContenido{
     grid-template-columns: repeat(4,22.375%);
-    grid-template-rows: 30vw;
+    grid-template-rows: 27vw;
+
 }
 
-#novedades #producto_8{
+#novedades #producto8{
     grid-column: 4/5;
     grid-row:1/2;
 }
 
 
-#novedades .nombre_de_producto, #novedades .detalle_de_producto{
+#novedades .NombreProducto, #novedades .DetalleProducto{
     color:  #F2EEE8;
 }
 
-
+#novedades .ContenedorProductos .ImagenesProductos {
+    max-height: 90%;
+}
 
 /**CONOCENOS*/
 
@@ -783,7 +782,7 @@ form label{
 
 .boton_ver_mas{
     max-width: 40%;
-    font-size: .7rem;
+    font-size: 1.5vw;
     padding: .6rem;
 }
 
@@ -810,6 +809,7 @@ form label{
     align-items: center;
     max-width: 100%;
     max-height: 60%;
+    margin-top: 2rem;
 }
 
 #coming_soon_texto h1{
@@ -819,9 +819,9 @@ form label{
 }
 
 #coming_soon_texto h3{
-    font-size: 1rem;    
+    font-size: 2vw;    
     text-align: center; 
-    padding-top: 1.4rem;    
+    padding-top: 1rem;    
     margin-bottom: 0;
 }
 
@@ -836,6 +836,7 @@ form label{
 }
 #coming_soon_imagen_div{
     max-width: 100%;
+    margin-bottom: 1rem;
 }
 
 
@@ -876,6 +877,11 @@ form label{
 #conocenos_contenedor_imagen{
     max-width: 100%;
     max-height: 60vh;
+
+}
+
+#conocenos_contenedor_imagen img{
+    max-width: 100%;
 
 }
 
@@ -975,24 +981,24 @@ form label{
     height: 100%;
 }
 
-#novedades .productos_contenido_grid{
+#novedades .ProductosContenidoGrid{
    margin-top: 1rem;
 }
 
-.contenedor_productos .imagenes_de_productos{
+.ContenedorProductos .ImagenesProductos{
     max-height: 80%;
 }
 
-.contenedor_productos .productos_contenedor_textos{
+.ContenedorProductos .ProductosContenedorTextos{
     max-height: 15%;
 }
 
 
-#novedades .nombre_de_producto{
+#novedades .NombreProducto{
     font-size: .9rem;
 }
 
- #novedades .detalle_de_producto{
+ #novedades .DetalleProducto{
    font-size: .6rem;
 }
 
@@ -1060,13 +1066,19 @@ form label{
 @media only screen and (max-width: 480px){
 
     .boton_ver_mas{
-        max-width: 40%;
-        font-size: .8rem;
+        max-width: 80%;
+        font-size: 1rem;
         padding: .6rem;
+        margin-top: 0;
     }
 
-        
+    h1{
+    line-height: 7vh;
+}
+
+ 
     /**SECCIÓN COMING SOON*/
+    
     
     #section_coming_soon{
         height: 100%;
@@ -1099,22 +1111,10 @@ form label{
    
     
     /**CONOCE HOME*/
-
-    .encabezado_secciones{
-       align-content: baseline;
-       align-items:initial;
+    #conocenos_home {
+        padding-bottom: 1rem;
     }
-
-    .encabezado_secciones__numeros, .encabezado_secciones__subtitulos{
-        font-size: 8vw;
-    }
-
-    .encabezado_secciones__numeros, .encabezado_secciones__subtitulos{
-        font-size: 10vw;
-        margin: 0;
-    }
-
-    
+   
     #conocenos_contenedor_imagen{
         max-width: 100%;
         max-height: 30vh;
@@ -1128,34 +1128,41 @@ form label{
     
     
     #conocenos_home .parrafo_destacado{
-        font-size: .8rem;
-        line-height: 1.2rem;
+        font-size: 1rem;
+        line-height: 1.7rem;
         padding: .5rem 0 0 0;
     }
 
+    #conocenos_contenedor_texto a {
+         max-width: 80%;
 
-    
+    }
     
     /**PREGUNTAS FRECUENTES HOME*/
     
     #preguntas_frecuentes_home{
-        padding: 2rem 1.5rem 3rem;
+        padding: 2rem 1.5rem 4rem;
     }
     
+    #preguntas_frecuentes_home .preguntas_frecuentes_encabezado {
+        align-items: center;
+
+    }
+
     #preguntas_frecuentes_home .preguntas_frecuentes_encabezado h4{
         font-size: 2rem;
 
     }
     
     #preguntas_frecuentes_home .preguntas_frecuentes_encabezado p{
-        font-size: 1rem;
+        font-size: 1.3rem;
         padding-bottom: .6rem;
-        padding-top: .5rem;
-    }
+        padding-top:0;
+        padding-right: 1rem;    }
     
     
     #preguntas_frecuentes_home .preguntas_frecuentes_respuesta p{
-        font-size: .8rem;
+       
     }
     
     #preguntas_frecuentes_home a{
@@ -1163,11 +1170,11 @@ form label{
     }
 
     #preguntas_frecuentes_home .preguntas_frecuentes_encabezado{
-        padding-bottom: 0;
+        padding-bottom: 1rem;
     }
 
     .accordion-body{
-        font-size: .8rem;
+
         padding: 1rem;
         padding-top: 0;
     }
@@ -1180,28 +1187,36 @@ form label{
         padding-top: 1rem;
     }
     
+    #preguntas_frecuentes_home a {
+        margin-top: 1rem;
+    }
     
     
     /**NEWSLETTER HOME*/
     
     #newsletter{
         flex-direction: column;
-        padding: 2rem 1.5rem 3rem; 
+        padding: 3rem 1.5rem 4rem; 
         text-align: center;
     }
     
     #newsletter div{
         width: 100%;
+        text-align: center;
+    }
+
+    #newsletter .encabezado_secciones__subtitulos {
+        text-align: center;
     }
     
-    #newsletter .encabezado_secciones__subtitulos{
-        font-size: 2rem;
-        text-align: center;
-        margin-bottom: 2rem;
-    }
     
     #newsletter_form{
         margin: auto;
+        padding-top: 2rem;
+    }
+
+    #newsletter_form .datos_form:active, #newsletter_form .datos_form::placeholder{
+        font-size: 1rem;
     }
     
     
@@ -1212,51 +1227,53 @@ form label{
         padding: 2rem 1.5rem 3rem;
     }
     
-    #novedades .productos_contenido{
+    #novedades .ProductosContenido{
        grid-template-columns: 48% 48%;
-       grid-template-rows: 72vw 72vw;
+       grid-template-rows: 65vw 65vw;
        margin-top: 1.3rem;
        column-gap: 4%;
-       row-gap: 4%;
+       row-gap: 5%;
        max-width: 100%;
        max-height: 100%;
+       padding-bottom: 4rem;
     }
 
-    #novedades #producto_1{
+    #novedades .ContenedorProductos .ImagenesProductos {
+        max-height: 85%;
+
+     }
+
+    #novedades #producto1{
         grid-column: 1/2;
         grid-row:1/2;
     }
 
-    #novedades #producto_2{
+    #novedades #producto2{
         grid-column: 2/3;
         grid-row:1/2;
     }
 
-    #novedades #producto_3{
+    #novedades #producto3{
         grid-column: 1/2;
         grid-row:2/3;
     }
     
-    #novedades #producto_8{
+    #novedades #producto8{
         grid-column: 2/3;
         grid-row:2/3;
     }
 
-    .contenedor_productos .imagenes_de_productos{
+    .ContenedorProductos .ImagenesProductos{
         max-height: 80%;
     }
     
-    .contenedor_productos .productos_contenedor_textos{
+    .ContenedorProductos .ProductosContenedorTextos{
         max-height: 15%;
     }
     
     
-    #novedades .nombre_de_producto{
+    #novedades .NombreProducto{
         font-size: .9rem;
     }
-    
-     #novedades .detalle_de_producto{
-       font-size: .6rem;
-    }
-    
+        
     }
