@@ -1,19 +1,12 @@
 @import "conocenos";
 @import "faq";
 @import "productos";
+@import "_mixins";
+@import "_variables";
 
-$verde: #3A4D43;
-$crema: #F2EEE8;
-$verdeClaro: #A3ADA5;
 
 /* TITULOS GENERALES –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-@mixin titulares($color,$fontsize) {
-    color: $color;
-    font-family: 'Brygada 1918', serif;
-    font-size: $fontsize;
-    font-weight: lighter;
-}
 
 .encabezado_secciones {
     display: flex;

@@ -1,16 +1,15 @@
-  /* GENERALES  –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-  $verde: #3A4D43;
-  $crema: #F2EEE8;
-  $verdeClaro: #A3ADA5;
+
+@import "_variables";
 
 
 /* PREGUNTAS FRECUENTES –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 #preguntasFrecuentesPagina {
-    
-    #preguntasFrecuentesHome{ 
-    background-color:  #3A4D43;
+    background-color: $verde;
+
+    .preguntasFrecuentesContenedor{ 
+    background-color: $verde;
     padding: 6rem 10rem 4rem;
     margin:0;
     }
@@ -41,23 +40,23 @@
     }
 
     .accordion-button{
-    background-color: #3A4D43;
+    background-color: $verde;
     color: $crema;
  }
  
     .accordion-header{
-     background-color: #3A4D43;
+     background-color: $verde;
      padding-bottom: 1rem;
  }
     .accordion-body {
-     background-color: #3A4D43;
+     background-color: $verde;
      color: $crema;  
  }
  
  
     .accordion-button:not(.collapsed) {
      color: $crema;
-     background-color: #3A4D43;
+     background-color: $verde;
 
  }
  
@@ -72,7 +71,7 @@
  }
 
     .preguntasFrecuentesRespuesta{
-        background-color: #3A4D43;
+        background-color: $verde;
     }
 
 }
@@ -165,7 +164,7 @@
 
     #preguntasFrecuentesPagina {
     
-        #preguntasFrecuentesHome{ 
+        .preguntasFrecuentesContenedor{ 
         padding: 5rem 6rem 4rem;
             .accordion-body {
                 padding: 0 7rem 3rem 7rem;
@@ -185,7 +184,7 @@
 
     #preguntasFrecuentesPagina {
     
-        #preguntasFrecuentesHome{ 
+        .preguntasFrecuentesContenedor{ 
         padding: 5rem 2rem 4rem;
 
         .accordion-body   {

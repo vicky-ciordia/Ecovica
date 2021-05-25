@@ -1,5 +1,6 @@
 @charset "UTF-8";
-/* GENERALES  –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* TITULARES –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* COLORES  –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* SECCION 1  –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 #conocenosGrid {
   display: grid;
@@ -335,53 +336,45 @@
       font-size: 1rem;
       line-height: 1.6rem; } }
 
-/* GENERALES  –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* COLORES  –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* PREGUNTAS FRECUENTES –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-#preguntasFrecuentesPagina #preguntasFrecuentesHome {
-  background-color: #3A4D43;
-  padding: 6rem 10rem 4rem;
-  margin: 0; }
-
-#preguntasFrecuentesPagina .tituloSecciones, #preguntasFrecuentesPagina h4, #preguntasFrecuentesPagina p {
-  color: #F2EEE8; }
-
-#preguntasFrecuentesPagina .tituloSecciones {
-  margin: 1rem 0 1rem 0;
-  padding: 1rem 0;
-  height: 20%; }
-
-#preguntasFrecuentesPagina .preguntasFrecuentesEncabezado {
-  padding-bottom: 0; }
-  #preguntasFrecuentesPagina .preguntasFrecuentesEncabezado div {
-    border-bottom: 1px solid #F2EEE8; }
-  #preguntasFrecuentesPagina .preguntasFrecuentesEncabezado h4 {
-    padding-right: .7rem; }
-
-#preguntasFrecuentesPagina .accordion-button {
-  background-color: #3A4D43;
-  color: #F2EEE8; }
-
-#preguntasFrecuentesPagina .accordion-header {
-  background-color: #3A4D43;
-  padding-bottom: 1rem; }
-
-#preguntasFrecuentesPagina .accordion-body {
-  background-color: #3A4D43;
-  color: #F2EEE8; }
-
-#preguntasFrecuentesPagina .accordion-button:not(.collapsed) {
-  color: #F2EEE8;
+#preguntasFrecuentesPagina {
   background-color: #3A4D43; }
-
-#preguntasFrecuentesPagina .accordion-button:not(.collapsed)::after {
-  color: #F2EEE8;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"); }
-
-#preguntasFrecuentesPagina .accordion-button::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"); }
-
-#preguntasFrecuentesPagina .preguntasFrecuentesRespuesta {
-  background-color: #3A4D43; }
+  #preguntasFrecuentesPagina .preguntasFrecuentesContenedor {
+    background-color: #3A4D43;
+    padding: 6rem 10rem 4rem;
+    margin: 0; }
+  #preguntasFrecuentesPagina .tituloSecciones, #preguntasFrecuentesPagina h4, #preguntasFrecuentesPagina p {
+    color: #F2EEE8; }
+  #preguntasFrecuentesPagina .tituloSecciones {
+    margin: 1rem 0 1rem 0;
+    padding: 1rem 0;
+    height: 20%; }
+  #preguntasFrecuentesPagina .preguntasFrecuentesEncabezado {
+    padding-bottom: 0; }
+    #preguntasFrecuentesPagina .preguntasFrecuentesEncabezado div {
+      border-bottom: 1px solid #F2EEE8; }
+    #preguntasFrecuentesPagina .preguntasFrecuentesEncabezado h4 {
+      padding-right: .7rem; }
+  #preguntasFrecuentesPagina .accordion-button {
+    background-color: #3A4D43;
+    color: #F2EEE8; }
+  #preguntasFrecuentesPagina .accordion-header {
+    background-color: #3A4D43;
+    padding-bottom: 1rem; }
+  #preguntasFrecuentesPagina .accordion-body {
+    background-color: #3A4D43;
+    color: #F2EEE8; }
+  #preguntasFrecuentesPagina .accordion-button:not(.collapsed) {
+    color: #F2EEE8;
+    background-color: #3A4D43; }
+  #preguntasFrecuentesPagina .accordion-button:not(.collapsed)::after {
+    color: #F2EEE8;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"); }
+  #preguntasFrecuentesPagina .accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"); }
+  #preguntasFrecuentesPagina .preguntasFrecuentesRespuesta {
+    background-color: #3A4D43; }
 
 /* TU PREGUNTA –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 #tuPregunta {
@@ -440,18 +433,18 @@
 /**RESPONSIVE*/
 /**MAX 1200–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media only screen and (max-width: 1200px) {
-  #preguntasFrecuentesPagina #preguntasFrecuentesHome {
+  #preguntasFrecuentesPagina .preguntasFrecuentesContenedor {
     padding: 5rem 6rem 4rem; }
-    #preguntasFrecuentesPagina #preguntasFrecuentesHome .accordion-body {
+    #preguntasFrecuentesPagina .preguntasFrecuentesContenedor .accordion-body {
       padding: 0 7rem 3rem 7rem; }
   #tuPregunta {
     padding: 5rem 6rem 4rem; } }
 
 /**RESPONSIVE CELULAR–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media only screen and (max-width: 480px) {
-  #preguntasFrecuentesPagina #preguntasFrecuentesHome {
+  #preguntasFrecuentesPagina .preguntasFrecuentesContenedor {
     padding: 5rem 2rem 4rem; }
-    #preguntasFrecuentesPagina #preguntasFrecuentesHome .accordion-body {
+    #preguntasFrecuentesPagina .preguntasFrecuentesContenedor .accordion-body {
       padding: 0;
       padding-bottom: 2rem; }
   #preguntasFrecuentesPagina .accordion-button {
@@ -480,7 +473,7 @@
       #tuPregunta #tuPreguntaForm form {
         padding-top: 3rem; } }
 
-/* GENERALES  –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* COLORES  –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .tituloSecciones {
   justify-self: right;
   max-width: 100%;
@@ -834,6 +827,8 @@
       .productosContenidoGrid .productosContenido .cartaTexto__parrafo {
         font-size: 1.7rem; } }
 
+/* TITULARES –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* COLORES  –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* TITULOS GENERALES –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .encabezado_secciones {
   display: flex;

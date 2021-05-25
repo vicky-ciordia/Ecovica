@@ -1,3 +1,7 @@
+  /* Algunos estilos generales + estilos de la Home + Pagina de contacto + Pagina 404 error */
+
+
+
 /**ESTILOS GENERALES*/
 
 *{
@@ -124,7 +128,7 @@ h1 {
 
 
 
-
+  /* HOME  –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 
 /**SECCIÓN COMING SOON*/
@@ -301,7 +305,7 @@ h1 {
 
 /**PREGUNTAS FRECUENTES HOME*/
 
-#preguntasFrecuentesHome{
+.preguntasFrecuentesContenedor{
     padding: 4rem 10rem 6rem;
 }
 
@@ -310,14 +314,14 @@ h1 {
     padding: 0 5rem;
 }
 
-#preguntasFrecuentesHome .preguntasFrecuentesEncabezado {
+.preguntasFrecuentesContenedor .preguntasFrecuentesEncabezado {
     display: flex;
     flex-direction: row;
   align-items: center;
     color: #3A4D43;
 }
 
-#preguntasFrecuentesHome .preguntasFrecuentesEncabezado h4{
+.preguntasFrecuentesContenedor .preguntasFrecuentesEncabezado h4{
     font-family:'Brygada 1918', serif;
     font-size: 3.8rem;
     margin: 0;
@@ -327,7 +331,7 @@ h1 {
 
 }
 
-#preguntasFrecuentesHome .preguntasFrecuentesEncabezado div{
+.preguntasFrecuentesContenedor .preguntasFrecuentesEncabezado div{
     margin: 0;
     margin-bottom: 2rem;
     padding: 0;
@@ -335,7 +339,7 @@ h1 {
     border-bottom: 1px solid #3A4D43;
 }
 
-#preguntasFrecuentesHome .preguntasFrecuentesEncabezado p{
+.preguntasFrecuentesContenedor .preguntasFrecuentesEncabezado p{
     font-family:'Brygada 1918', serif;
     font-size: 1.7rem;
     width: 100%;
@@ -345,7 +349,7 @@ h1 {
 }
 
 
-#preguntasFrecuentesHome a{
+.preguntasFrecuentesContenedor a{
     max-width: 30%;
     margin-top: 2rem;
 }
@@ -487,7 +491,7 @@ box-shadow: none;
 
 
 
-/**CONTACTO*/
+  /* CONTACTO  –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 #contactoPagina{
     background-color: #A3ADA5;
@@ -572,7 +576,8 @@ box-shadow: none;
 
 
 
-/**404 ERROR*/
+  /* 404 ERROR  –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 
 #error404 {
     background-color: #A3ADA5;
@@ -643,7 +648,9 @@ box-shadow: none;
 
 
 
-/**RESPONSIVE-------------------------------------------------------------------*/
+/* RESPONSIVE  –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* RESPONSIVE TABLET  –––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 @media only screen and (max-width: 1200px){
 
@@ -653,7 +660,7 @@ box-shadow: none;
     padding-bottom: 1rem;
 }
 
-/**HOME*/
+/**HOME------------------------------------*/
 
 /**SECCIÓN COMING SOON*/
 
@@ -749,11 +756,11 @@ box-shadow: none;
 
 /**PREGUNTAS FRECUENTES HOME*/
 
-#preguntasFrecuentesHome{
+.preguntasFrecuentesContenedor{
     padding: 2rem 4rem 4rem;
 }
 
-#preguntasFrecuentesHome .preguntasFrecuentesEncabezado {
+.preguntasFrecuentesContenedor .preguntasFrecuentesEncabezado {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -761,18 +768,18 @@ box-shadow: none;
     margin: 0;
 }
 
-#preguntasFrecuentesHome .preguntasFrecuentesEncabezado h4{
+.preguntasFrecuentesContenedor .preguntasFrecuentesEncabezado h4{
     font-size: 2.8rem;
     width: 2.5rem;
 }
 
-#preguntasFrecuentesHome .preguntasFrecuentesEncabezado p{
+.preguntasFrecuentesContenedor .preguntasFrecuentesEncabezado p{
     font-size: 1.4rem;
     padding-bottom: .6rem;
     padding-top: .5rem;
 }
 
-#preguntasFrecuentesHome .preguntas_frecuentes_respuesta {
+.preguntasFrecuentesContenedor .preguntas_frecuentes_respuesta {
     background-color: #F2EEE8;
 }
 
@@ -880,11 +887,12 @@ box-shadow: none;
 }
 
 
-/**RESPONSIVE PUNTO MEDIO*/
+  /* RESPONSIVE PUNTO MEDIO  –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 @media only screen and (max-width: 780px){
 
 
+/**HOME-----------------------------------*/
      
     /**CONOCE HOME*/
     #conocenosHome {
@@ -1091,7 +1099,7 @@ box-shadow: none;
 
  
 
-/**RESPONSIVE CELULAR*/
+  /* RESPONSIVE CELULAR  –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 /**HOME------------------------------------*/
 
@@ -1185,24 +1193,24 @@ box-shadow: none;
 
     /**PREGUNTAS FRECUENTES HOME*/
     
-    #preguntasFrecuentesHome{
+    .preguntasFrecuentesContenedor{
         padding: 2rem 1.5rem 4rem;
     }
     
-    #preguntasFrecuentesHome .preguntasFrecuentesEncabezado {
+    .preguntasFrecuentesContenedor .preguntasFrecuentesEncabezado {
         align-items:flex-start;
 
    
 
     }
 
-    #preguntasFrecuentesHome .preguntasFrecuentesEncabezado h4{
+    .preguntasFrecuentesContenedor .preguntasFrecuentesEncabezado h4{
         font-size: 2rem;
         display: none;
 
     }
     
-    #preguntasFrecuentesHome .preguntasFrecuentesEncabezado p{
+    .preguntasFrecuentesContenedor .preguntasFrecuentesEncabezado p{
         font-size: 1.3rem;
         padding-bottom: .6rem;
         padding-top:0;
@@ -1211,11 +1219,11 @@ box-shadow: none;
     
     
     
-    #preguntasFrecuentesHome a{
+    .preguntasFrecuentesContenedor a{
         max-width: 60%;
     }
 
-    #preguntasFrecuentesHome .preguntasFrecuentesEncabezado{
+    .preguntasFrecuentesContenedor .preguntasFrecuentesEncabezado{
         padding-bottom: 1rem;
     }
 
@@ -1229,7 +1237,7 @@ box-shadow: none;
         max-width: 100%;
     }
 
-    #preguntasFrecuentesHome .preguntasFrecuentesEncabezado div{
+    .preguntasFrecuentesContenedor .preguntasFrecuentesEncabezado div{
         margin-bottom: 1.5rem;
     }
 
@@ -1237,7 +1245,7 @@ box-shadow: none;
         padding-top: 1.5rem;
     }
     
-    #preguntasFrecuentesHome a {
+    .preguntasFrecuentesContenedor a {
         margin-top: 1rem;
     }
 
@@ -1246,12 +1254,12 @@ box-shadow: none;
         max-width: 100%;
     }
 
-    #preguntasFrecuentesHome .preguntasFrecuentesEncabezado div{
+    .preguntasFrecuentesContenedor .preguntasFrecuentesEncabezado div{
         width: 100%;
 
     }
     
-    #preguntasFrecuentesPagina #preguntasFrecuentesHome .accordion-body   {
+    #preguntasFrecuentesPagina .preguntasFrecuentesContenedor .accordion-body   {
         padding: 1rem 0;
         padding-bottom: 2rem;
     }
@@ -1310,6 +1318,7 @@ box-shadow: none;
 
 
 /**PAGINA CONTACTO------------------------------------*/
+
 #contactoPagina{
     padding: 8rem 2rem 6rem;
 }
