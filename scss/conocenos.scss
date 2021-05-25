@@ -1,6 +1,10 @@
 
   /* GENERALES  –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+$verde: #3A4D43;
+$crema: #F2EEE8;
+$verdeClaro: #A3ADA5;
+
 @mixin titulares($color,$fontsize) {
     color: $color;
     font-family: 'Brygada 1918', serif;
@@ -20,7 +24,7 @@
     #fondoVerde{
         grid-column: 3/5;
         grid-row: 1/5;
-        background-color: #A3ADA5;
+        background-color: $verdeClaro;
         z-index: -800;
     }
 
@@ -31,7 +35,7 @@
         max-height: 100%;
         padding: 7rem 10rem 2rem 0;
         margin:0;
-        color:#F2EEE8;
+        color:$crema;
     }
 
     #presentacionVicky{
@@ -52,12 +56,12 @@
 
         .parrafoDestacado{
             padding: 0 10rem 0 4rem;
-            color:#F2EEE8;
+            color:$crema;
         }
 
         .nombreProducto {
             padding-left: 4rem;
-            color:#F2EEE8;
+            color:$crema;
          }
     }
 
@@ -110,7 +114,7 @@
     }
     
     #nombreConocenosCami {
-        color:#F2EEE8;
+        color:$crema;
     }
     
     .nombreProducto {

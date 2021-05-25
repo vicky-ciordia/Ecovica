@@ -1,4 +1,8 @@
+  /* GENERALES  –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+  $verde: #3A4D43;
+  $crema: #F2EEE8;
+  $verdeClaro: #A3ADA5;
 
 
 /* PREGUNTAS FRECUENTES –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -12,7 +16,7 @@
     }
 
     .tituloSecciones, h4, p{
-    color:#F2EEE8;
+    color:$crema;
     }
 
 
@@ -28,7 +32,7 @@
      padding-bottom: 0;
 
         div{
-            border-bottom: 1px solid #F2EEE8;
+            border-bottom: 1px solid $crema;
         }
 
         h4{
@@ -38,7 +42,7 @@
 
     .accordion-button{
     background-color: #3A4D43;
-    color: #F2EEE8;
+    color: $crema;
  }
  
     .accordion-header{
@@ -47,18 +51,18 @@
  }
     .accordion-body {
      background-color: #3A4D43;
-     color: #F2EEE8;  
+     color: $crema;  
  }
  
  
     .accordion-button:not(.collapsed) {
-     color: #F2EEE8;
+     color: $crema;
      background-color: #3A4D43;
 
  }
  
     .accordion-button:not(.collapsed)::after{
-     color: #F2EEE8;
+     color: $crema;
      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
  }
 
@@ -82,7 +86,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #A3ADA5;
+    background-color: $verdeClaro;
     margin: 0;
     padding: 3rem 10rem 5rem 10rem;
     
@@ -91,7 +95,7 @@
 
         .parrafoDestacado{ 
             font-size: 1rem;
-            color: #F2EEE8;
+            color: $crema;
         }
     
     }
@@ -116,10 +120,10 @@
                 height: 20vh;
                 padding: 0;
                 margin: 0;
-                border: 1px solid #F2EEE8;
+                border: 1px solid $crema;
                 font-family: 'Open Sans', sans-serif;
                 font-size: 1rem;
-                color:   #F2EEE8;
+                color:   $crema;
                 padding: 1rem;
                 letter-spacing: .1rem;
             }
@@ -127,7 +131,7 @@
             .textArea::placeholder{
                 font-family: 'Open Sans', sans-serif;
                 font-size: 1rem;
-                color: #F2EEE8;
+                color: $crema;
                 font-weight: lighter;
                 font-size: 1rem;
             }
@@ -146,7 +150,7 @@
         margin: 0;
         padding: 0;
         padding-bottom: 2rem;
-        color: #F2EEE8;
+        color: $crema;
         text-align:left;
     }
 }
@@ -183,12 +187,19 @@
     
         #preguntasFrecuentesHome{ 
         padding: 5rem 2rem 4rem;
+
+        .accordion-body   {
+            padding: 0;
+            padding-bottom: 2rem;
+        }
+
         }
 
        .accordion-button{
             width: 100%;
             max-width: 100%;
         }
+        
 
     }
 

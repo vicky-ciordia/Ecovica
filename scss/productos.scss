@@ -1,8 +1,10 @@
 
+  /* GENERALES  –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+  $verde: #3A4D43;
+  $crema: #F2EEE8;
+  $verdeClaro: #A3ADA5;
 
-
-$bg:  #F2EEE8;
 
   .tituloSecciones{
     justify-self: right;
@@ -175,7 +177,7 @@ $bg:  #F2EEE8;
   grid-template-rows: 1fr 2fr 2fr 1fr;
   
   background: rgba(77, 77, 77, .9);
-  color: $bg;
+  color: $crema;
   opacity: 0;
   transition: all 0.5s;
   
@@ -201,7 +203,7 @@ $bg:  #F2EEE8;
     width: 0;
       
     border: none;
-    border-bottom: solid 1px $bg;
+    border-bottom: solid 1px $crema;
     
   
     
