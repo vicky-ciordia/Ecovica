@@ -39,18 +39,11 @@ ol li{
   }
 
 
-.TituloSecciones{
-    color: #3A4D43;
-    font-family: 'Brygada 1918', serif;
-    font-size: 5vw;
-    font-weight: lighter;
-    margin: 0 0 1rem 0;
-    padding: 1rem 0;
-    text-align: right;
-    }
 
 
-.parrafo_destacado{
+
+
+.parrafoDestacado{
     font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
     margin: 0 auto;
@@ -59,7 +52,7 @@ ol li{
     
 }
 
-.NombreProducto{
+.nombreProducto{
     color: #3A4D43;
     font-size: 1.2rem;
     font-weight: normal;
@@ -67,7 +60,7 @@ ol li{
     text-align: center;
 }
 
-.DetalleProducto {
+.detalleProducto {
     font-size: .7rem;
     text-align: center;
 }
@@ -83,12 +76,11 @@ h1 {
 
 
 
-.boton_ver_mas{
+.botonVerMas{
             display: block;
-            max-width: 10vw;
             font-size: 1rem;
-            font-family: 'Brygada 1918', serif;
-            font-weight: lighter; 
+            font-family: 'Open Sans', sans-serif;
+            font-weight: normal;
             color:  #3A4D43;
             margin: 4rem auto 0 auto;  
             padding: .8rem;
@@ -101,11 +93,11 @@ h1 {
             transition: color .8s linear;
         }
 
-.boton_ver_mas:hover {
+.botonVerMas:hover {
     color: #F2EEE8;
 }
 
-.boton_ver_mas:before {
+.botonVerMas:before {
     content: "";
     background-color: #3A4D43;
     position: absolute;
@@ -115,8 +107,8 @@ h1 {
     z-index: -9;
     }
 
-.boton_ver_mas:hover:before,
-.boton_ver_mas:focus:before {
+.botonVerMas:hover:before,
+.botonVerMas:focus:before {
     animation: .4s hover linear;
     animation-fill-mode: forwards;
     }
@@ -131,55 +123,17 @@ h1 {
 
 
 
-/**ESTILOS GENERALES FORMS*/
-
-.datos_form{
-    max-width: 100%;
-    background: none;
-    border: none;
-    border-bottom: 1px solid #F2EEE8;
-    padding-bottom: .4rem;
-    width: 30%;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    color: #F2EEE8;
-    letter-spacing: .1rem;
-    font-weight: lighter;
-}
-
-input::placeholder {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    color: #F2EEE8;
-}
-
-
-
-.textarea{
-    background: none;
-    border: 1px solid #3A4D43;
-    font-family: 'Open Sans', sans-serif;
-}
-
-form label{
-    font-family: 'Open Sans', sans-serif;
-    color:#3A4D43;
-    letter-spacing: 0.2rem;
-    padding: 1rem;
-}
-
 
 
 /**SECCIÓN COMING SOON*/
 
-#section_coming_soon{
+#sectioncomingSoon{
     padding: 8rem 10rem 5rem 10rem;
     height: 100%;
     
 }
 
-#coming_soon{
+#comingSoon{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -192,7 +146,7 @@ form label{
 }
 
 
-#coming_soon_texto{
+#comingSoonTexto{
     display: flex;
     flex-direction: column;
     align-content: space-between;
@@ -202,12 +156,12 @@ form label{
     max-height: 100%;
 }
 
-#coming_soon_texto h1{
+#comingSoonTexto h1{
     font-size: 7vw;
     font-weight: normal; 
 }
 
-#coming_soon_texto h3{
+#comingSoonTexto h3{
     font-size: 1.2rem;
     font-family:'Brygada 1918', serif;
     font-weight: lighter; 
@@ -216,17 +170,18 @@ form label{
     padding-bottom: 1rem;      
 }
 
-#coming_soon_texto .parrafo_destacado{
+#comingSoonTexto .parrafoDestacado{
     padding: 2rem 0 3rem;
     margin: 0;
 }
 
 
-#coming_soon_texto .boton_ver_mas {
+#comingSoonTexto .botonVerMas {
     margin: 0;
+    max-width: 50%;
  }
 
- #coming_soon_imagen {
+ #comingSoon_imagen {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -234,18 +189,18 @@ form label{
     max-height: 50vh;
 }
 
-#coming_soon_imagen_div {
+#comingSoon_imagen_div {
     max-width: 100%;
     display: flex;
     justify-content: center;
 }
 
-#coming_soon_imagen_div img{
+#comingSoon_imagen_div img{
     max-height: 100%;
     max-width: 100%;
 }
 
-#coming_soon_imagen .NombreProducto{
+#comingSoon_imagen .nombreProducto{
     margin: 0;
     padding: 1rem 0 0 0;
 }
@@ -289,79 +244,78 @@ form label{
     padding:1.4rem;
 }
 
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    display: none;
+}
+
 
 
 /**CONOCE HOME*/
 
-#conocenos_home{
+#conocenosHome{
     display: flex;
     flex-direction: row;
     max-width: 100vw;
-    height: 40rem;
     align-content: center;
     background-color:  #3A4D43;
     color: #F2EEE8;
 }
 
-#conocenos_contenedor_imagen{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    max-width: 50%;
-    max-height: 100%;
-    overflow: hidden;
+#conocenosContenedorImagen{
+    width: 50%;
+    background-image: url(../imagenes/vickycami_home.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-#conocenos_contenedor_imagen img{
-    max-width: 100%;
-}
 
-#conocenos_contenedor_texto{
-    max-width: 50%;
+#conocenosContenedorTexto{
+    width: 50%;
     padding: 4rem 10rem 4rem 5rem;
-
 }
 
-#conocenos_contenedor_texto .encabezado_secciones h2{
+#conocenosContenedorTexto .encabezado_secciones h2{
     color: #F2EEE8;
+
 }
 
 
-#conocenos_contenedor_texto a{
+#conocenosContenedorTexto a{
     border: 1px solid  #F2EEE8;
     color:  #F2EEE8;
     margin-top: 3rem;
     max-width: 45%;
 }
 
-#conocenos_home .boton_ver_mas:hover {
+#conocenosHome .botonVerMas:hover {
     color: #3A4D43;
 }
 
-#conocenos_home .boton_ver_mas:before {
+#conocenosHome .botonVerMas:before {
     background-color: #F2EEE8;
     }
 
 
 /**PREGUNTAS FRECUENTES HOME*/
 
-#preguntas_frecuentes_home{
+#preguntasFrecuentesHome{
     padding: 4rem 10rem 6rem;
 }
 
 
-#preguntas_frecuentes_home ol li{
+#preguntasFrecuentesHom ol li{
     padding: 0 5rem;
 }
 
-#preguntas_frecuentes_home .preguntas_frecuentes_encabezado {
+#preguntasFrecuentesHome .preguntasFrecuentesEncabezado {
     display: flex;
     flex-direction: row;
   align-items: center;
     color: #3A4D43;
 }
 
-#preguntas_frecuentes_home .preguntas_frecuentes_encabezado h4{
+#preguntasFrecuentesHome .preguntasFrecuentesEncabezado h4{
     font-family:'Brygada 1918', serif;
     font-size: 3.8rem;
     margin: 0;
@@ -371,7 +325,7 @@ form label{
 
 }
 
-#preguntas_frecuentes_home .preguntas_frecuentes_encabezado div{
+#preguntasFrecuentesHome .preguntasFrecuentesEncabezado div{
     margin: 0;
     margin-bottom: 2rem;
     padding: 0;
@@ -379,7 +333,7 @@ form label{
     border-bottom: 1px solid #3A4D43;
 }
 
-#preguntas_frecuentes_home .preguntas_frecuentes_encabezado p{
+#preguntasFrecuentesHome .preguntasFrecuentesEncabezado p{
     font-family:'Brygada 1918', serif;
     font-size: 1.7rem;
     width: 100%;
@@ -388,16 +342,9 @@ form label{
     padding-top: .5rem;
 }
 
-#preguntas_frecuentes_home .preguntas_frecuentes_respuesta {
 
-}
-
-#preguntas_frecuentes_home .preguntas_frecuentes_respuesta iframe{
-    margin-top: 1rem;
-}
-
-#preguntas_frecuentes_home a{
-    max-width: 20%;
+#preguntasFrecuentesHome a{
+    max-width: 30%;
     margin-top: 2rem;
 }
 
@@ -417,9 +364,16 @@ form label{
     background-color: #F2EEE8;
     color: #3A4D43;
     font-size: 1rem;
-    padding:0 5rem 2rem 5rem;
+    padding:0 10rem 3rem 10rem;
     font-weight: normal;
     max-width: 100%;
+    text-align: center;
+}
+
+.accordion-body p {
+    padding-bottom: 1rem;
+    margin: 0;
+    text-align: left;
 }
 
 
@@ -443,6 +397,13 @@ form label{
     width: 100%;
 
 }
+
+
+.accordion-button:focus{
+border-color: none;
+box-shadow: none;
+}
+
 
 /**NEWSLETTER HOME*/
 
@@ -474,176 +435,14 @@ form label{
     margin: auto;
 }
 
-#newsletter_form .datos_form {
+#newsletter_form .datosForm {
     width:100%;
 }
 
-#newsletter_form .form_botones__boton {
+#newsletter_form .formBotones__boton {
     width:80%;
     margin-top: 2rem;
 }
-
-
-/**PRODUCTOS*/
-
-
-
-#productos{
-    margin: 0;
-    padding: 3rem;
-}
-
-
-
-.TituloSecciones{
-    justify-self: right;
-    max-width: 100%;
-    margin: 7rem 0 1rem 0;
-    padding: 0rem 10rem 1rem 0;
-    height: 20%;
-}
-
-
-.ProductosContenidoGrid{
-    margin-top: 5rem;
-    max-width: 100%;
-    padding:0 16rem 3rem 16rem;
-}
-
-.ProductosContenido{
-    display: grid;
-    grid-template-columns: 31% 31% 31%;
-    grid-template-rows: repeat(4,26vw);
-    max-width: 100%;
-    grid-column-gap: 3.5%;
-    grid-row-gap: 2vw;
-    max-height: 100%;
-}
-
-#producto1{
-    grid-column: 1/2;
-    grid-row: 1/2;
-    max-width: 100%;
-    max-height: 100%;
-}
-
-#producto2{
-    grid-column: 2/3;
-    grid-row: 1/2;
-    max-width: 100%;
-    max-height: 100%;
-}
-
-#producto3{
-    grid-column: 3/4;
-    grid-row: 1/2;
-    max-width: 100%;
-    max-height: 100%;
-}
-
-#producto4{
-    grid-column: 1/2;
-    grid-row: 2/3;
-    max-width: 100%;
-    max-height: 100%;
-}
-
-#producto5{
-    grid-column: 2/3;
-    grid-row: 2/3;
-    max-width: 100%;
-    max-height: 100%;
-    align-self: center;
-}
-
-#producto6{
-    grid-column: 3/4;
-    grid-row: 2/3;
-    max-width: 100%;
-    max-height: 100%;
-}
-
-#producto7{
-    grid-column: 1/2;
-    grid-row: 3/4;
-    max-width: 100%;
-    max-height: 100%;
-}
-
-#producto8{
-    grid-column: 2/3;
-    grid-row: 3/4;
-    max-width: 100%;
-    max-height: 100%;
-}
-
-#producto9{
-    grid-column: 3/4;
-    grid-row: 3/4;
-    max-width: 100%;
-    max-height: 100%;
-}
-
-#producto10{
-    grid-column: 1/2;
-    grid-row: 4/5;
-    max-width: 100%;
-    max-height: 100%;
-    align-self: center;
-}
-
-#producto11{
-    grid-column: 2/3;
-    grid-row: 4/5;
-    max-width: 100%;
-    max-height: 100%;
-}
-
-#producto12{
-    grid-column: 3/4;
-    grid-row: 4/5;
-    max-width: 100%;
-    max-height: 100%;
-    align-self: center;
-}
-
-.ContenedorProductos {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    max-width: 100%;
-    max-height: 100%;
-    transition: scale 2s;
-}
-
-.ContenedorProductos .ImagenesProductos{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-height: 100%;
-    max-width: 100%;
-    overflow: hidden;
-}
-
-.ContenedorProductos .ProductosContenedorTextos{
-    max-width: 100%;
-    max-height: 10%;
-}
-
-.ContenedorProductos .ImagenesProductos img{
-    max-width: 100%;
-}
-
-.ContenedorProductos .ImagenesProductos img:hover{
-    transform: scale(1.2,1.2);
-}
-
-.ContenedorProductos .NombreProducto, .DetalleProducto {
-    margin: 0;
-}
-
-
-
 
 
 /**PRODUCTOS HOME*/
@@ -654,12 +453,12 @@ form label{
     max-width:100vw;
 }
 
-#novedades .ProductosContenidoGrid{
+#novedades .productosContenidoGrid{
    margin-top: 1rem;
    padding:0;
 }
 
-#novedades .ProductosContenido{
+#novedades .productosContenido{
     grid-template-columns: repeat(4,22.375%);
     grid-template-rows: 27vw;
 
@@ -671,36 +470,35 @@ form label{
 }
 
 
-#novedades .NombreProducto, #novedades .DetalleProducto{
+#novedades .nombreProducto, #novedades .detalleProducto{
     color:  #F2EEE8;
 }
 
-#novedades .ContenedorProductos .ImagenesProductos {
+#novedades .contenedorProductos .imagenesProductos {
     max-height: 90%;
 }
 
-/**CONOCENOS*/
-
-
-/**PREGUNTAS FRECUENTES*/
+#novedades .botonVerMas{
+    max-width: 30%;
+}
 
 
 
 
 /**CONTACTO*/
 
-#contacto_pagina{
+#contactoPagina{
     background-color: #A3ADA5;
     display: grid;
     grid-template-columns: repeat(4,25%);
     grid-template-rows: auto;
     max-width: 100%;
-    padding: 8rem 10rem 6rem;
+    padding: 8rem 10rem 6rem 6rem;
 }
 
 
-#frase_contacto{
-    grid-column: 1/4;
+.fraseContacto{
+    grid-column: 1/2;
     grid-row: 1/2;
     text-align: left;
     font-family: 'Brygada 1918', serif;
@@ -710,7 +508,7 @@ form label{
     line-height: 8vw;
 }
 
-#contacto_pagina #contacto_form{
+#contactoPagina #contactoForm{
     grid-column: 3/5;
     grid-row: 1/2;
     width: 100%;
@@ -718,93 +516,155 @@ form label{
     align-self: center;
 }
 
-#datos_personales { 
+#datosPersonales { 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    padding-top: 6rem;
+    padding-top: 0;
 }
 
 #nombre{ 
     width: 47%;
-    border-bottom: 2px solid #F2EEE8;
+    border-bottom: 1px solid #F2EEE8;
 }
 
 #apellido{ 
     width: 47%;
-    border-bottom: 2px solid #F2EEE8;
+    border-bottom: 1px solid #F2EEE8;
 }
 
 #mail{
     width: 100%;
     margin-top: 2rem;
-    border-bottom: 2px solid #F2EEE8;
+    border-bottom: 1px solid #F2EEE8;
 }
 
-#contacto_form .textarea{
+#contactoForm .textArea{
     width: 96%;
-    margin-top: 6rem;
+    margin-top: 3rem;
     padding: 2%;
-    border: 2px solid #F2EEE8;
-    background-color: #f2eee827;
-    font-family: 'Open Sans', sans-serif;
+    border: 1px solid #F2EEE8;
     font-size: 1rem;
     color:   #F2EEE8;
     letter-spacing: .1rem;
+    margin-bottom: 2rem;
 }
 
-#contacto_form .textarea::placeholder{
+#contactoForm .textArea::placeholder{
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     color: #F2EEE8;
     font-weight: lighter;
     font-size: 1rem;
+
 }
 
-#contacto_form .textarea:focus{
-    background-color: #BCC4BE;
- }
 
-#contacto_form .boton_form{
+#contactoForm .boton_form{
     width: 30%;
     margin: 2rem 1rem;
-    border: 2px solid #F2EEE8;
+    border: 1px solid #F2EEE8;
 
 }
 
 
-/**RESPONSIVE*/
 
-/**HOME*/
+/**404 ERROR*/
+
+#error404 {
+    background-color: #A3ADA5;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: auto;
+    max-width: 100%;
+    padding: 8rem 10rem 6rem;
+    height: 60vh;
+
+}
+
+#error404 .fraseContacto{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 10vw;
+    align-self: center;
+}
+
+#error404 div{
+    grid-column: 2/2;
+    grid-row: 2/3;
+    color: #F2EEE8;
+    max-width: 100%;
+    padding: 3rem 0;
+    z-index: 999;
+    }
+
+    #error404 .linea{
+        width: 10%;
+        height: 0;
+        padding: 0;
+        border-bottom: 1px solid #F2EEE8;
+    }
+
+#error404 h2{
+        text-align: left;
+        color: #F2EEE8;
+        font-family: 'Brygada 1918', serif;
+        font-size: 2vw;
+        font-weight: lighter;
+        width: 100%;
+        }
+
+#error404 .parrafoDestacado{
+    font-size: 1.5vw;
+    line-height: 2.5vw;
+    text-align: left;
+    margin: 0;
+}
+
+#error404 a{
+    border: 1px solid  #F2EEE8;
+    color:  #F2EEE8;
+    margin: 0;
+    margin-top: 3rem;
+    max-width: 30%;
+}
+
+#error404  .botonVerMas:hover {
+    color: #3A4D43;
+}
+
+#error404 .botonVerMas:before {
+    background-color: #F2EEE8;
+    }
+
+
+
+
+/**RESPONSIVE-------------------------------------------------------------------*/
 
 @media only screen and (max-width: 1200px){
 
-.boton_ver_mas{
-    max-width: 40%;
-    font-size: 1.5vw;
-    padding: .6rem;
-}
 
 .encabezado_secciones{
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
-
+/**HOME*/
 
 /**SECCIÓN COMING SOON*/
 
-#section_coming_soon{
+#sectioncomingSoon{
     padding: 6rem 4rem 4rem 4rem;
     
 }
 
-#coming_soon{
+#comingSoon{
     flex-wrap: wrap-reverse;
 }
 
-#coming_soon_texto{
+#comingSoonTexto{
     justify-content: center;
     align-items: center;
     max-width: 100%;
@@ -812,42 +672,43 @@ form label{
     margin-top: 2rem;
 }
 
-#coming_soon_texto h1{
+#comingSoonTexto h1{
     font-size: 7vw;
     text-align: center;
 
 }
 
-#coming_soon_texto h3{
+#comingSoonTexto h3{
     font-size: 2vw;    
     text-align: center; 
     padding-top: 1rem;    
     margin-bottom: 0;
 }
 
-#coming_soon_texto .parrafo_destacado{
+#comingSoonTexto .parrafoDestacado{
     padding: 1rem 0 2rem;
     margin: 0;
     text-align: center;
+    font-size: 1.2rem;
+    line-height: 2rem;
 }
 
-#coming_soon_imagen{
+#comingSoon_imagen{
     max-width: 40%;
 }
-#coming_soon_imagen_div{
+#comingSoon_imagen_div{
     max-width: 100%;
     margin-bottom: 1rem;
 }
 
 
-#coming_soon_imagen img{
+#comingSoon_imagen img{
     max-width: 100%;
 }
 
-#coming_soon_texto .boton_ver_mas{
-    max-width: 50%;
-    font-size: .9rem;
-    padding: .7rem 1rem;
+#comingSoon_imagen .nombreProducto{
+    font-size: 3vw;
+    margin-bottom: 1rem;
 }
 
 .carousel-indicators{
@@ -857,95 +718,69 @@ form label{
 }
 
 .carousel-indicators [data-bs-target]{
-    height: .4rem;
-    width: .4rem;
+    height: .7rem;
+    width: .7rem;
     border-radius: 100%;
 }
 
+#comingSoonTexto .botonVerMas{
+    width: 40%;
+
+}
+
+
 /**CONOCE HOME*/
 
-#conocenos_home{
-    display: flex;
-    flex-direction: column;
-    max-width: 100vw;
-    height: auto;
-    justify-content:center;
-    background-color:  #3A4D43;
-    color: #F2EEE8;
-}
 
-#conocenos_contenedor_imagen{
-    max-width: 100%;
-    max-height: 60vh;
-
-}
-
-#conocenos_contenedor_imagen img{
-    max-width: 100%;
-
-}
-
-#conocenos_contenedor_texto{
-    max-width: 100%;
-    padding: 0 4rem 3rem 4rem;
-    text-align: center;
+#conocenosContenedorTexto{
+    width: 50%;
+    padding: 4rem;
 }
 
 
-#conocenos_home .parrafo_destacado{
-    font-size: .85rem;
-    line-height: 1.4rem;
-    padding: 0 4rem;
+#conocenosHome .parrafoDestacado{
+    font-size: 1rem;
+    line-height: 1.7rem;
+    padding: 0;
 }
 
 
 /**PREGUNTAS FRECUENTES HOME*/
 
-#preguntas_frecuentes_home{
-    padding: 2rem 4rem 3rem;
+#preguntasFrecuentesHome{
+    padding: 2rem 4rem 4rem;
 }
 
-#preguntas_frecuentes_home .preguntas_frecuentes_encabezado {
+#preguntasFrecuentesHome .preguntasFrecuentesEncabezado {
     display: flex;
     flex-direction: row;
     align-items: center;
     color: #3A4D43;
+    margin: 0;
 }
 
-#preguntas_frecuentes_home .preguntas_frecuentes_encabezado h4{
-    font-size: 2.3rem;
-    width: 2rem;
+#preguntasFrecuentesHome .preguntasFrecuentesEncabezado h4{
+    font-size: 2.8rem;
+    width: 2.5rem;
 }
 
-#preguntas_frecuentes_home .preguntas_frecuentes_encabezado p{
-    font-size: 1.2rem;
+#preguntasFrecuentesHome .preguntasFrecuentesEncabezado p{
+    font-size: 1.4rem;
     padding-bottom: .6rem;
     padding-top: .5rem;
 }
 
-#preguntas_frecuentes_home .preguntas_frecuentes_respuesta {
-    padding-left: 1rem;
+#preguntasFrecuentesHome .preguntas_frecuentes_respuesta {
     background-color: #F2EEE8;
 }
 
-#preguntas_frecuentes_home .preguntas_frecuentes_respuesta p{
-    font-size: .9rem;
-}
 
-#preguntas_frecuentes_home .preguntas_frecuentes_respuesta iframe{
-    margin-top: 1rem;
-    max-width: 100%;
-}
-
-#preguntas_frecuentes_home a{
-    max-width: 40%;
-}
 
 
 /**NEWSLETTER HOME*/
 
 #newsletter{
-    padding: 2rem 4rem 3rem; 
+    padding: 3rem 4rem 4rem; 
     text-align: center;
 }
 
@@ -954,7 +789,7 @@ form label{
 }
 
 #newsletter .encabezado_secciones__subtitulos{
-    font-size: 2.5rem;
+    font-size: 2.7rem;
 }
 
 #newsletter_form{
@@ -962,14 +797,14 @@ form label{
 }
 
 
-#newsletter_form .datos_form::placeholder, #newsletter_form .datos_form {
-    font-size: .8rem;
+#newsletter_form .datosForm::placeholder, #newsletter_form .datosForm {
+    font-size: 1rem;
 }
 
 #newsletter_form .boton_form {
     width:50%;
-    margin-top: 1.2rem;
-    font-size: .8rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
 }
 
 
@@ -977,29 +812,67 @@ form label{
 
 #novedades{
     background-color: #A3ADA5; 
-    padding: 2rem 4rem 3rem;
+    padding: 2rem 4rem 4rem;
     height: 100%;
 }
 
-#novedades .ProductosContenidoGrid{
+#novedades .productosContenidoGrid{
    margin-top: 1rem;
 }
 
-.ContenedorProductos .ImagenesProductos{
+#novedades .botonVerMas{
+    margin-top: 3rem;
+ }
+
+.contenedorProductos .imagenesProductos{
     max-height: 80%;
 }
 
-.ContenedorProductos .ProductosContenedorTextos{
+.contenedorProductos .productosContenedorTextos{
     max-height: 15%;
 }
 
-
-#novedades .NombreProducto{
-    font-size: .9rem;
+#novedades .contenedorProductos{
+    align-items: stretch;
+    justify-content: space-between;
 }
 
- #novedades .DetalleProducto{
+
+#novedades .nombreProducto{
+    font-size: 1.2rem;
+}
+
+ #novedades .detalleProducto{
    font-size: .6rem;
+}
+
+/**PAGINA CONTACTO------------------------------------*/
+
+#contactoPagina{
+    padding: 8rem 6rem 4rem 3rem;
+    align-items: center;
+}
+
+.fraseContacto{
+    font-size: 8vw;
+    line-height: 9vw;
+
+}
+
+
+/**ERROR 404------------------------------------*/
+
+#error404 {
+    padding: 9rem 4rem 4rem 4rem;
+}
+
+#error404 h2{
+    font-size: 3vw;
+}
+
+#error404 .parrafoDestacado{
+    font-size: 2vw;
+    line-height: 3vw;
 }
 
 }
@@ -1007,67 +880,224 @@ form label{
 
 /**RESPONSIVE PUNTO MEDIO*/
 
-@media only screen and (max-width: 720px){
+@media only screen and (max-width: 780px){
 
-    footer{
-        padding: 2rem 1.5rem 3rem
-    }
-    
-    #contacto_footer{
+
+     
+    /**CONOCE HOME*/
+    #conocenosHome {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: .5rem;
-    }
-    
-    #redes_sociales{
-        display: flex;
-        flex-direction: row;
-        padding: 1.5rem 0 1rem 0;
-        justify-content: center;
-        width: 40%;
-    }
-    
-    footer h3{
-        font-size: 1.4rem;
-        text-align:center;
-        padding: 1rem 2rem;
-    }
-    
-    #linea_footer{
-        width: 20%;
-        height: 0;
-        padding: 0;
-        border-bottom: 1px solid #A3ADA5;
-    }
-    
-    footer p{
-        font-size: 0.6rem;
-    }
-    
-    
-    .iconos_footer{
-        width: 2.4vw;
-        height: 2.4vw;
-        padding: 1.3vw;
-        margin: 1vw;
+        max-width: 100vw;
+        height: auto;
+        justify-content:center;
+        padding-bottom: 1rem;
     }
 
-    .iconos_footer img{
-        margin: auto;
+ 
+    #conocenosContenedorImagen{
+        width: 100%;
+        max-width: 100%;
+        height: 40vh;
+        background-position: top;
+    
     }
+    
+    #conocenosContenedorTexto{
+        padding: 2rem 4rem 3rem 4rem;
+        text-align: left;
+        max-width: 100%;
+        width: auto;
+    }
+    
+    
+    #conocenosHome .parrafoDestacado{
+        font-size: 1rem;
+        line-height: 1.8rem;
+        padding: .5rem 0 0 0;
+
+    }
+
+    #conocenosContenedorTexto a {
+         max-width: 40%;
+
+    }
+
+    /**NEWSLETTER*/
+
+    #newsletter .encabezado_secciones__subtitulos {
+        font-size: 2rem;
+   }
+
+/**PRODUCTOS HOME*/
+    
+#novedades{
+    padding: 2rem 4rem 3rem;
+}
+
+#novedades .productosContenido{
+   grid-template-columns: 48% 48%;
+   grid-template-rows: 50vw 50vw;
+   margin-top: 1.3rem;
+   column-gap: 6%;
+   row-gap: 8%;
+   max-width: 80%;
+   max-height: 100%;
+   padding-bottom: 4rem;
+   margin: auto;
+}
+
+#novedades .contenedorProductos .imagenesProductos {
+    max-height: 85%;
+
  }
+
+#novedades #producto1{
+    grid-column: 1/2;
+    grid-row:1/2;
+}
+
+#novedades #producto2{
+    grid-column: 2/3;
+    grid-row:1/2;
+}
+
+#novedades #producto3{
+    grid-column: 1/2;
+    grid-row:2/3;
+}
+
+#novedades #producto8{
+    grid-column: 2/3;
+    grid-row:2/3;
+}
+
+.contenedorProductos .imagenesProductos{
+    max-height: 80%;
+}
+
+.contenedorProductos .productosContenedorTextos{
+    max-height: 15%;
+}
+
+
+#novedades .nombreProducto{
+    font-size: 3vw;
+}
+
+#novedades .botonVerMas{
+    max-width: 40%;
+}
+
+    
+   /**PAGINA CONTACTO------------------------------------*/
+   #contactoPagina{
+       display: flex;
+       flex-direction: column;
+       padding: 8rem 6rem 6rem;
+   }
+   
+   #contactoPagina #contactoForm {
+       padding-top: 0;
+   }
+   
+   
+   .fraseContacto{
+       font-size: 10vw;
+       font-weight: normal;
+       line-height: 12vw;
+       text-align: center;
+   }
+   
+   #datosPersonales { 
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       padding-top: 1rem;
+   }
+   
+   #nombre, #apellido{ 
+       width: 100%;
+       margin-top: 2rem;
+   }
+   
+   #contactoForm .textArea{
+       max-width: 100%;
+       margin-top: 3rem;
+       background-color:transparent;
+   }
+   
+   #contactoForm .textArea:focus{
+       background-color:none;
+    }
+   
+   #contactoForm .boton_form{
+       width: 40%;
+       margin: 2rem 1rem;
+       border: 1px solid #F2EEE8;
+   
+   }
+   #contactoForm .formBotones {
+        width: 100%;
+       padding-top: 1rem;
+   }
+   
+   #contactoForm .formBotones__boton {
+       margin-top: 1rem;
+       width: 30%;
+   }
+
+/**ERROR 404------------------------------------*/
+
+#error404 {
+    display: block;
+}
+
+#error404 .fraseContacto{
+    font-size: 15vw;
+    text-align: center;
+}
+
+#error404 .linea{
+    margin:auto;
+    margin-top: 3rem;
+}
+
+#error404 h2{
+    font-size: 4vw;
+    line-height: 5vw;
+    text-align: center;
+
+}
+
+#error404 .parrafoDestacado{
+    font-size: 3vw;
+    line-height: 4vw;
+    text-align: center;
+}
+
+#error404 .botonVerMas{
+    max-width: 40%;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+
+
+ }
+
+
+ 
 
 /**RESPONSIVE CELULAR*/
 
-/**HOME*/
+/**HOME------------------------------------*/
 
 @media only screen and (max-width: 480px){
 
-    .boton_ver_mas{
-        max-width: 80%;
-        font-size: 1rem;
+    .botonVerMas{
+        max-width: 70%;
+        font-size: .9rem;
         padding: .6rem;
         margin-top: 0;
     }
@@ -1080,115 +1110,142 @@ form label{
     /**SECCIÓN COMING SOON*/
     
     
-    #section_coming_soon{
+    #sectioncomingSoon{
         height: 100%;
         padding: 6rem 2rem;
     
     }
     
-    #coming_soon_texto{
+    #comingSoonTexto{
         max-width: 100%;
         max-height: 60%;
     }
     
-    #coming_soon_texto h1{
+    #comingSoonTexto h1{
         font-size: 12vw;
     }
     
-    #coming_soon_texto h3{
-        font-size: .8rem;    
+    #comingSoonTexto h3{
+        font-size: 1rem;    
     }
     
-    #coming_soon_texto .parrafo_destacado{
+    #comingSoonTexto .parrafoDestacado{
         padding: 1rem 0 2rem;
         margin: 0;
         text-align: center;
+        font-size: 1rem;
     }
     
-    #coming_soon_imagen{
+    #comingSoon_imagen{
+        max-width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    .carousel-inner {
+        width: 80vw;
+        margin-top: 3rem;  
+    }
+
+    .carousel-indicators [data-bs-target]{
+        width: .7rem;
+        height: .7rem;
+
+    }
+
+    #comingSoon_imagen .nombreProducto {
+        margin-bottom: 1rem;
+
+    }
+
+    #comingSoonTexto .botonVerMas {
+        width: 60%;
+
+    }
+   
+   
+     
+    /**CONOCE HOME*/
+
+    #conocenosHome .botonVerMas{
         max-width: 80%;
     }
-   
     
-    /**CONOCE HOME*/
-    #conocenos_home {
-        padding-bottom: 1rem;
-    }
-   
-    #conocenos_contenedor_imagen{
-        max-width: 100%;
-        max-height: 30vh;
-    
-    }
-    
-    #conocenos_contenedor_texto{
+    #conocenosContenedorTexto{
         padding: 2rem 1.5rem 3rem 1.5rem;
-        text-align: left;
     }
     
     
-    #conocenos_home .parrafo_destacado{
+    #conocenosHome .parrafoDestacado{
         font-size: 1rem;
-        line-height: 1.7rem;
-        padding: .5rem 0 0 0;
     }
 
-    #conocenos_contenedor_texto a {
-         max-width: 80%;
 
-    }
-    
     /**PREGUNTAS FRECUENTES HOME*/
     
-    #preguntas_frecuentes_home{
+    #preguntasFrecuentesHome{
         padding: 2rem 1.5rem 4rem;
     }
     
-    #preguntas_frecuentes_home .preguntas_frecuentes_encabezado {
-        align-items: center;
+    #preguntasFrecuentesHome .preguntasFrecuentesEncabezado {
+        align-items:flex-start;
+
+   
 
     }
 
-    #preguntas_frecuentes_home .preguntas_frecuentes_encabezado h4{
+    #preguntasFrecuentesHome .preguntasFrecuentesEncabezado h4{
         font-size: 2rem;
+        display: none;
 
     }
     
-    #preguntas_frecuentes_home .preguntas_frecuentes_encabezado p{
+    #preguntasFrecuentesHome .preguntasFrecuentesEncabezado p{
         font-size: 1.3rem;
         padding-bottom: .6rem;
         padding-top:0;
-        padding-right: 1rem;    }
-    
-    
-    #preguntas_frecuentes_home .preguntas_frecuentes_respuesta p{
-       
+        padding-right: 1rem;
     }
     
-    #preguntas_frecuentes_home a{
+    
+    
+    #preguntasFrecuentesHome a{
         max-width: 60%;
     }
 
-    #preguntas_frecuentes_home .preguntas_frecuentes_encabezado{
+    #preguntasFrecuentesHome .preguntasFrecuentesEncabezado{
         padding-bottom: 1rem;
     }
 
     .accordion-body{
-
-        padding: 1rem;
-        padding-top: 0;
+        padding: 0rem 1rem 3rem 1rem;
+        font-size: 1.1rem;
+        line-height: 1.8;
     }
 
-    #preguntas_frecuentes_home .preguntas_frecuentes_encabezado div{
-        margin-bottom: 1rem;
+    .accordion-body iframe{
+        max-width: 100%;
+    }
+
+    #preguntasFrecuentesHome .preguntasFrecuentesEncabezado div{
+        margin-bottom: 1.5rem;
     }
 
     #accordionFlushExample{
-        padding-top: 1rem;
+        padding-top: 1.5rem;
     }
     
-    #preguntas_frecuentes_home a {
+    #preguntasFrecuentesHome a {
         margin-top: 1rem;
+    }
+
+    #preguntasFrecuentesPagina .accordion-button{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #preguntasFrecuentesHome .preguntasFrecuentesEncabezado div{
+        width: 100%;
+
     }
     
     
@@ -1207,6 +1264,7 @@ form label{
 
     #newsletter .encabezado_secciones__subtitulos {
         text-align: center;
+        font-size: 9vw;
     }
     
     
@@ -1215,7 +1273,7 @@ form label{
         padding-top: 2rem;
     }
 
-    #newsletter_form .datos_form:active, #newsletter_form .datos_form::placeholder{
+    #newsletter_form .datosForm:active, #newsletter_form .datosForm::placeholder{
         font-size: 1rem;
     }
     
@@ -1223,57 +1281,70 @@ form label{
     /**PRODUCTOS HOME*/
     
     #novedades{
-        background-color: #A3ADA5; 
-        padding: 2rem 1.5rem 3rem;
+       padding: 2rem 1.5rem 3rem;
     }
     
-    #novedades .ProductosContenido{
-       grid-template-columns: 48% 48%;
+    #novedades .productosContenido{
        grid-template-rows: 65vw 65vw;
-       margin-top: 1.3rem;
        column-gap: 4%;
        row-gap: 5%;
        max-width: 100%;
-       max-height: 100%;
-       padding-bottom: 4rem;
     }
 
-    #novedades .ContenedorProductos .ImagenesProductos {
-        max-height: 85%;
-
-     }
-
-    #novedades #producto1{
-        grid-column: 1/2;
-        grid-row:1/2;
-    }
-
-    #novedades #producto2{
-        grid-column: 2/3;
-        grid-row:1/2;
-    }
-
-    #novedades #producto3{
-        grid-column: 1/2;
-        grid-row:2/3;
-    }
-    
-    #novedades #producto8{
-        grid-column: 2/3;
-        grid-row:2/3;
-    }
-
-    .ContenedorProductos .ImagenesProductos{
-        max-height: 80%;
-    }
-    
-    .ContenedorProductos .ProductosContenedorTextos{
-        max-height: 15%;
-    }
-    
-    
-    #novedades .NombreProducto{
+      
+    #novedades .nombreProducto{
         font-size: .9rem;
     }
-        
+
+    #novedades .botonVerMas{
+        max-width: 60%;
+    }
+
+
+/**PAGINA CONTACTO------------------------------------*/
+#contactoPagina{
+    padding: 8rem 2rem 6rem;
+}
+
+
+.fraseContacto{
+    font-size: 15vw;
+    line-height: 19vw;
+}
+
+
+#contactoForm .boton_form{
+    width: 50%;
+    }
+
+#contactoForm .formBotones__boton {
+    width: 60%;
+}
+
+
+/**ERROR 404------------------------------------*/
+
+#error404 {
+    padding: 9rem 2rem 4rem 2rem;
+}
+
+#error404 .fraseContacto{
+    font-size: 20vw;
+}
+
+#error404 h2{
+    font-size: 7vw;
+    line-height: 10vw;
+
+}
+
+#error404 .parrafoDestacado{
+    font-size: 1rem;
+    line-height: 1.6rem;
+}
+
+#error404 .botonVerMas{
+    max-width: 60%;
+}
+
     }

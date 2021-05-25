@@ -11,62 +11,86 @@
     <link href="https://fonts.googleapis.com/css2?family=Brygada+1918&family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/estilosgenerales.css">
+    <link rel="stylesheet" href="css/style.css">
     
 
 </head>
 <body>
 
-    <header class="header">
-        <a href="index.html" class="header__logo">
-            <img src="imagenes/ecovica-logo.svg">
-        
-        </a>
+    <header>
         <!--MENU-->
-        <nav  class="header__menu">
-            <ul data-animation="bonus" id="menu">
-                <li> <a href="index.html">Home</a>
-                </li>
-                <li> <a href="productos.html">Productos</a>
-                </li>
-                <li><a href="conocenos.html">Conocenos</a></li>
-                <li><a href="faq.html">Preguntas frecuentes</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+         <nav class="header">
+            <a href="index.html" class="header__logo">
+                <img src="imagenes/ecovica-logo.svg">
+            </a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul ul id="menu" data-animation="bonus" class="header__menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="conocenos.html" >Conocenos</a></li>
+                <li><a href="faq.html" >Preguntas Frecuentes</a></li>
+                <li><a href="contacto.html" >Contacto</a></li>
             </ul>
         </nav>
     </header>
     
 <!--CONTACTO-->  
-        <section id="contacto_pagina">
-            <h1 id="frase_contacto" class="animate__animated animate__fadeInUp">Tu opinión nos ayuda a mejorar</h1>
-            <div id="contacto_form" class="animate__animated animate__fadeInUp">
-                <form action="contacto.php" method="POST" enctype="application/x-www-form-urlencoded">
-                <div id="datos_personales">
-                    <input type="text" placeholder="Nombre" id="nombre" class="datos_form">
-                    <input type="text" placeholder="Apellido" id="apellido" class="datos_form">   
+        <section id="contactoPagina">
+            <h1 class="fraseContacto" class="animate__animated animate__fadeInUp">¡Escribinos, <br> queremos conocerte!</h1>
+            <div id="contactoForm" class="animate__animated animate__fadeInUp">
+                <form action="contacto.html" method="GET">
+                <div id="datosPersonales">
+                    <input type="text" placeholder="Nombre" id="nombre" class="datosForm">
+                    <input type="text" placeholder="Apellido" id="apellido" class="datosForm">   
                 </div> 
-                <input type="email" placeholder="Mail" id="mail" class="datos_form" required>
-                <textarea name="consulta" cols="30" rows="10" placeholder="Escribí tu consulta" id="tuconsulta" class="textarea" required></textarea>               
+                <input type="email" placeholder="Mail" id="mail" class="datosForm" required>
+                <br>
+
+
+                <div id="radioButton">
+                <label class="radioButtons">
+                    <input type="radio" name="tipoVenta" id="provedor" value="Provedor">Soy provedor
+                    <i></i>
+                </label>
+
+                <label class="radioButtons">
+                    <input type="radio" name="tipoVenta" id="cliente" value="Cliente">Soy Ecoviquero
+                    <i></i>
+                </label>
+
+                 </div>
+                    
+                 <br>
+                <select name="conociste" id="formDesplegable">
+                    <option value="redes">¿Cómo nos conociste?</option>
+                    <option value="redes">Redes Sociales</option>
+                    <option value="amigo">Recomendación de un amigo</option>
+                    <option value="tienda">Mercado Libre</option>
+                    <option value="femenino">otro</option>
+                </select>
+                <textarea name="consulta" cols="30" rows="5" placeholder="Escribí tu consulta" id="tuConsulta" class="textArea" required></textarea>               
                 
-                <div class="form_botones">
-                    <input type="submit" value="Enviar" class="form_botones__boton">
-                    <input type="reset" value="Volver a empezar" class="form_botones__boton">
+                <div class="formBotones">
+                    <input type="reset" value="Volver a empezar" class="formBotones__boton">
+                    <input type="submit" value="Enviar" class="formBotones__boton">
                 </div>
+                </form>
             </div>
         </section>
 
-<!--FOOTER--> 
+<!--FOOTER-->
 <footer id="footer">
     <div class="contacto">
         <h3>Sigamos conectados</h3>
         <div class="contacto__linea"></div>
         <div class="contacto__redes">
-        <a class="contacto__iconos"href="https://www.instagram.com/mecovica/" ><img src="imagenes/instagram.svg" alt="Logo de Instagram"></a>
-        <a class="contacto__iconos" href="https://www.tiktok.com/@mecovica"><img src="imagenes/tik-tok.svg" alt="Logo de Tik Tok"> </a>
+        <a class="contacto__iconos"href="https://www.instagram.com/mecovica/" target="_blank" ><img src="imagenes/instagram.svg" alt="Logo de Instagram"></a>
+        <a class="contacto__iconos" href="https://www.tiktok.com/@mecovica"target="_blank"><img src="imagenes/tik-tok.svg" alt="Logo de Tik Tok"> </a>
         </div>
     </div>
-    <p>Copyright Ecovica - 2021. Todos los derechos reservados.</p>
+    <p>Copyright Ecovica - 2021. Todos los derechos reservados. Alumna: Victoria Ciordia</p>
 </footer> 
 
 

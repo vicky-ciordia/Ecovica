@@ -3,75 +3,28 @@
 
 /* PREGUNTAS FRECUENTES –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-#preguntas_frecuentes_pagina {
+#preguntasFrecuentesPagina {
     
-    #preguntas_frecuentes_home{ 
+    #preguntasFrecuentesHome{ 
     background-color:  #3A4D43;
     padding: 6rem 10rem 4rem;
+    margin:0;
     }
 
-    .TituloSecciones, h4, p{
+    .tituloSecciones, h4, p{
     color:#F2EEE8;
     }
 
 
-    .TituloSecciones{
+    .tituloSecciones{
     margin: 1rem 0 1rem 0;
     padding: 1rem 0;
     height: 20%;
     }
 
-    .busqueda{
-        border-bottom: 1px solid #F2EEE8;
-        background: none;
-        width: 30%;
-        display: flex;
-        justify-content: space-between;
-        margin-left:0;
-        margin-bottom: 3rem;
     
-            &__texto{
-                text-decoration: none;
-                background-color: #3A4D43;
-                color:#F2EEE8;
-                padding: .8rem 1rem;
-                font-size: .8rem;
-                font-weight: lighter;
-                background: none;
-                border: none;
-                width: 90%;
-                letter-spacing: .1rem;
-            }
-            
-            &__texto::placeholder{
-                font-size: .8rem;
-                font-weight: lighter;
-                letter-spacing: .1rem;
-            }
-            
-            &__texto:focus{
-                color:#F2EEE8;
-            }
-            
-            &__lupa{
-                text-decoration: none;
-                background: none;
-                border: none;
-                background-color: #3A4D43;
-                padding: 0 1rem;
-                width: 5%;
-                border-right: 1px solid #F2EEE8;
-                margin: .4rem 0;
-    
-               img{
-                    max-width: 100%;
-                }
-            }
-            
-    
-    }
 
-    .preguntas_frecuentes_encabezado{
+    .preguntasFrecuentesEncabezado{
      padding-bottom: 0;
 
         div{
@@ -79,7 +32,6 @@
         }
 
         h4{
-            font-size: 4.4vw;
             padding-right: .7rem;
         }
     }
@@ -95,10 +47,7 @@
  }
     .accordion-body {
      background-color: #3A4D43;
-     color: #F2EEE8;
-     font-size: .9rem;
-     line-height: 1.5rem;
-     padding-left: 2rem;
+     color: #F2EEE8;  
  }
  
  
@@ -118,7 +67,7 @@
 
  }
 
-    .preguntas_frecuentes_respuesta{
+    .preguntasFrecuentesRespuesta{
         background-color: #3A4D43;
     }
 
@@ -128,7 +77,7 @@
 
 /* TU PREGUNTA –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-#tu_pregunta {
+#tuPregunta {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -137,17 +86,17 @@
     margin: 0;
     padding: 3rem 10rem 5rem 10rem;
     
-    #tu_pregunta_texto {
+    #tuPreguntaTexto {
         width: 50%;
 
-        .parrafo_destacado{ 
+        .parrafoDestacado{ 
             font-size: 1rem;
             color: #F2EEE8;
         }
     
     }
     
-    #tu_pregunta_form {
+    #tuPreguntaForm {
         width: 40%;
 
         form{
@@ -157,12 +106,12 @@
             align-content: center;
             padding: 2rem 0;
 
-            .datos_form{
+            .datosForm{
                 width:100%;
                 margin-bottom: 2rem;
             }
 
-            .textarea{
+            .textArea{
                 max-width: 100%;
                 height: 20vh;
                 padding: 0;
@@ -175,7 +124,7 @@
                 letter-spacing: .1rem;
             }
 
-            .textarea::placeholder{
+            .textArea::placeholder{
                 font-family: 'Open Sans', sans-serif;
                 font-size: 1rem;
                 color: #F2EEE8;
@@ -183,7 +132,7 @@
                 font-size: 1rem;
             }
 
-            .form_botones__boton{
+            .formBotones__boton{
                 width: 80%;
                 padding: 1rem;
                 margin:auto;
@@ -202,3 +151,81 @@
     }
 }
 
+
+/**RESPONSIVE*/
+
+/**MAX 1200–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (max-width: 1200px){
+
+
+    #preguntasFrecuentesPagina {
+    
+        #preguntasFrecuentesHome{ 
+        padding: 5rem 6rem 4rem;
+            .accordion-body {
+                padding: 0 7rem 3rem 7rem;
+        }
+    }   
+    }
+
+    #tuPregunta {
+        padding: 5rem 6rem 4rem;
+    }
+}
+
+/**RESPONSIVE CELULAR–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (max-width: 480px){
+
+
+    #preguntasFrecuentesPagina {
+    
+        #preguntasFrecuentesHome{ 
+        padding: 5rem 2rem 4rem;
+        }
+
+       .accordion-button{
+            width: 100%;
+            max-width: 100%;
+        }
+
+    }
+
+ /**TU PREGUNTA –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#tuPregunta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 2rem 5rem 2rem;
+    max-width: 100%;
+    
+
+    #tuPreguntaTexto {
+        width: 100%;
+
+        .encabezado_secciones__subtitulos{
+            text-align: center;
+            font-size: 9vw;
+            line-height: 12vw;
+
+        }
+    
+        .parrafoDestacado{ 
+            font-size: 1.2rem;
+            line-height: 1.8rem;
+            text-align: center;
+        }
+    
+    }
+    
+    #tuPreguntaForm {
+        width: 100%;   
+        form {
+            padding-top: 3rem;
+        }
+    }
+    }   
+}

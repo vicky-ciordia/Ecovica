@@ -18,20 +18,20 @@
 </head>
 
 <body>
-    <header class="header">
-        <a href="index.html" class="header__logo">
-            <img src="imagenes/ecovica-logo.svg">
-        </a>
+    <header>
         <!--MENU-->
-        <nav  class="header__menu">
-            <ul data-animation="bonus" id="menu">
-                <li> <a href="index.html">Home</a>
-                </li>
-                <li> <a href="productos.html">Productos</a>
-                </li>
-                <li><a href="conocenos.html">Conocenos</a></li>
-                <li><a href="faq.html">Preguntas frecuentes</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+         <nav class="header">
+            <a href="index.html" class="header__logo">
+                <img src="imagenes/ecovica-logo.svg">
+            </a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul ul id="menu" data-animation="bonus" class="header__menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="conocenos.html" >Conocenos</a></li>
+                <li><a href="faq.html" >Preguntas Frecuentes</a></li>
+                <li><a href="contacto.html" >Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -39,32 +39,31 @@
  <!--NUESTRA HISTORIA-->  
 
     <!--INTRO--> 
-    <section id="conocenos_grid">
+    <section id="conocenosGrid">
 
-        <div id="fondo_verde"class="animate__animated animate__fadeInDown"></div>
-
-        <div id="fondo_crema"></div>
+        <div id="fondoVerde"class="animate__animated animate__fadeInDown"></div>
         
-        <h1 class="TituloSecciones animate__animated animate__fadeIn">__ Nosotras</h1>
+        <h1 class="tituloSecciones animate__animated animate__fadeIn">__ Nosotras</h1>
 
-        <h4 id="nombre_conocenos_vicky" class="nombres_conocenos">_Vicky</h4>
+        <h4 id="nombreConocenosVicky" class="nombresConocenos">_Vicky</h4>
 
-        <div id="presentacion_vicky" data-aos="fade-up" data-aos-duration="1000" data-aos-once="false">
-            <p class="NombreProducto">- ¡Hola, yo soy Vicky! -</p>
-            <p class="parrafo_destacado">De esta dupla, soy la mayor, la más organizada y en Ecovica me toca ocupar el rol más administrativo. Me recibí de arquitecta y desde los primeros años de mi carrera me interesó el diseño ecológico. Poder hacer este emprendimiento con mi hermana me permite poder aprender todos los días sobre el cuidado de nuestro planeta. Me gusta poder acercarles e informarles sobre las maneras en las que podemos ayudar al medioambiente, así todos, desde nuestro lugar, podemos aportar nuestro granito de arena. 
+        <div id="presentacionVicky" data-aos="fade-up" data-aos-duration="1000" data-aos-once="false">
+            <p class="nombreProducto">- ¡Hola, yo soy Vicky! -</p>
+            <p class="parrafoDestacado">De esta dupla, soy la mayor, la más organizada y en Ecovica me toca ocupar el rol más administrativo. Me recibí de arquitecta y desde los primeros años de mi carrera me interesó el diseño ecológico. Poder hacer este emprendimiento con mi hermana me permite poder aprender todos los días sobre el cuidado de nuestro planeta. Me gusta poder acercarles e informarles sobre las maneras en las que podemos ayudar al medioambiente, así todos, desde nuestro lugar, podemos aportar nuestro granito de arena. 
             </p>
         </div>
 
-        <h4 id="nombre_conocenos_cami" class="nombres_conocenos">_Cami</h4>
+        <h4 id="nombreConocenosCami" class="nombresConocenos">_Cami</h4>
 
-        <div id="presentacion_cami" data-aos="fade-up" data-aos-duration="1000" data-aos-once="false">
-            <p class="NombreProducto">- ¡Hola, yo soy Cami! -</p>
-            <p class="parrafo_destacado">Yo soy la hermana menor y a diferencia de Vicky, muy desorganizada pero divertida. Por eso me toca ser la cara visible de Ecovica. Poco a poco este emprendimiento me llevó a tomar cada vez mayores cuidados y ser más consciente a la hora de elegir los productos que voy a elegir. Con Vicky pasamos mucho tiempo investigando y leyendo sobre las nuevas tendencias y productos ecológicos. Soy fan de probar cosas nuevas y de compartir tips sobre cómo usarlo, si sirve o no sirve, y todo lo que pueda ayudarlos.
+        <div id="presentacionCami" data-aos="fade-up" data-aos-duration="1000" data-aos-once="false">
+            <p class="nombreProducto">- ¡Hola, yo soy Cami! -</p>
+            <p class="parrafoDestacado">Yo soy la hermana menor y a diferencia de Vicky, muy desorganizada pero divertida. Por eso me toca ser la cara visible de Ecovica. Poco a poco este emprendimiento me llevó a tomar cada vez mayores cuidados y ser más consciente a la hora de elegir los productos que voy a elegir. Con Vicky pasamos mucho tiempo investigando y leyendo sobre las nuevas tendencias y productos ecológicos. Soy fan de probar cosas nuevas y de compartir tips sobre cómo usarlo, si sirve o no sirve, y todo lo que pueda ayudarlos.
             </p>
         </div>
 
-        <div id="presentacion_foto" class="animate__animated animate__fadeInUp">
-            <img src="imagenes/vicky-cami-conocenos.jpg" alt="Vicky y Cami">
+        <div class="overlayMobile"></div>
+
+        <div id="presentacionFoto" class="animate__animated animate__fadeInUp">
         </div>
         
     </section> 
@@ -72,35 +71,39 @@
 
      <!--FRASE--> 
 
-    <section id="frase_conocenos">
+    <section id="fraseConocenos">
         <h4>Creemos que con pequeños cambios podemos cuidar entre todos al planeta *</h4>
     </section>
 
     <!--NUESTROS CAMBIOS-->
 
-    <section id="nuestros_cambios">
+    <section id="nuestrosCambios">
         <div class="subtitulo">
             <h4 class="subtitulo__miscelanea">*</h4>
             <div class="subtitulo__linea"></div>
             <h4 class="subtitulo__texto">¿Cuáles son nuestros cambios?</h4>
         </div>
-        <div class="ProductosContenidoGrid">
-            <div class="ProductosContenido">
-                <div id="cambio_1" class="cambios_recuadro">
-                    <p class="NombreProducto">No más plásticos</p>
-                    <p class="DetalleProducto">a través del uso de productos ecológios. Creemos que con pequeños cambios podemos cuidar entre todos al planeta. Somos fieles creyentes de la frase "pequeñas acciones. grandes cambios</p>
+        <div class="productosContenidoGrid">
+            <div class="productosContenido">
+                <div id="cambio1" class="cambiosRecuadro">
+                    <img class="iconoCambio" src="imagenes/icon-no-plastic-bags.svg" ></img>
+                    <p class="nombreProducto">No más plásticos</p>
+                    <p class="detalleProducto">Tratamos de reemplazar los productos plásticos por otros más ecológicos: siempre tenemos a mano una bolsa de tela para guardar nuestras compras, evitamos el consumo de botellas plásticas, usamos bewraps para conservar la comida, entre otros.</p>
                 </div>
-                <div id="cambio_2" class="cambios_recuadro">
-                    <p class="NombreProducto">Reciclamos</p>
-                    <p class="DetalleProducto">a través del uso de productos ecológios. Creemos que con pequeños cambios podemos cuidar entre todos al planeta. Somos fieles creyentes de la frase "pequeñas acciones. grandes cambios</p>
+                <div id="cambio2" class="cambiosRecuadro">
+                    <img class="iconoCambio" src="imagenes/icon-recycle-symbol-of-three-arrows.svg" ></img>
+                    <p class="nombreProducto">Reciclamos</p>
+                    <p class="detalleProducto">Si bien tratamos de evitar el consumo de productos que no son ecológicos, cuando no hay otra opción, los reciclamos. Nosotras separamos en un tacho especial todos estos productos: botellas plásticas, envoltorios plásticos, papel, latas, etc.   </p>
                 </div>
-                <div id="cambio_3" class="cambios_recuadro">
-                    <p class="NombreProducto">Reutilizamos</p>
-                    <p class="DetalleProducto">a través del uso de productos ecológios. Creemos que con pequeños cambios podemos cuidar entre todos al planeta. Somos fieles creyentes de la frase "pequeñas acciones. grandes cambios</p>
+                <div id="cambio3" class="cambiosRecuadro">
+                    <img class="iconoCambio" src="imagenes/icon-plastic.svg" ></img>
+                    <p class="nombreProducto">Reutilizamos</p>
+                    <p class="detalleProducto">¡Reutlizar es lo que más nos gusta hacer! Muchos de nuestros hábitos pueden reemplazarse por productos que pueden reusarse: usamos botellas de vidrio, higiene femenina de tela, bewraps para conservar nuestra comida, bolsas de tela, etc. </p>
                 </div>
-                <div id="cambio_4" class="cambios_recuadro">
-                    <p class="NombreProducto">Compostamos</p>
-                    <p class="DetalleProducto">a través del uso de productos ecológios. Creemos que con pequeños cambios podemos cuidar entre todos al planeta. Somos fieles creyentes de la frase "pequeñas acciones. grandes cambios</p>
+                <div id="cambio4" class="cambiosRecuadro">
+                    <img class="iconoCambio" src="imagenes/icon-bag.svg" ></img>
+                    <p class="nombreProducto">Compostamos</p>
+                    <p class="detalleProducto">La compostera la adoptamos hace poco tiempo y es increible la reducción de nuestra basura. Al principio nos costó adaptarnos y llegar al equilibrio para que funcione, pero ahora se volvió parte de nuestra rutina y el resultado está buenísimo.</p>
                 </div>
             </div>
         </div>
@@ -108,18 +111,18 @@
 
 
 
-    <!--FOOTER-->
-    <footer id="footer">
-        <div class="contacto">
-            <h3>Sigamos conectados</h3>
-            <div class="contacto__linea"></div>
-            <div class="contacto__redes">
-            <a class="contacto__iconos"href="https://www.instagram.com/mecovica/" ><img src="imagenes/instagram.svg" alt="Logo de Instagram"></a>
-            <a class="contacto__iconos" href="https://www.tiktok.com/@mecovica" ><img src="imagenes/tik-tok.svg" alt="Logo de Tik Tok"> </a>
-            </div>
+<!--FOOTER-->
+<footer id="footer">
+    <div class="contacto">
+        <h3>Sigamos conectados</h3>
+        <div class="contacto__linea"></div>
+        <div class="contacto__redes">
+        <a class="contacto__iconos"href="https://www.instagram.com/mecovica/" target="_blank" ><img src="imagenes/instagram.svg" alt="Logo de Instagram"></a>
+        <a class="contacto__iconos" href="https://www.tiktok.com/@mecovica"target="_blank"><img src="imagenes/tik-tok.svg" alt="Logo de Tik Tok"> </a>
         </div>
-        <p>Copyright Ecovica - 2021. Todos los derechos reservados.</p>
-    </footer> 
+    </div>
+    <p>Copyright Ecovica - 2021. Todos los derechos reservados. Alumna: Victoria Ciordia</p>
+</footer> 
 
     <script src="js/wow.min.js"></script>
     <script>

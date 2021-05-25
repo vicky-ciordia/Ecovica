@@ -15,38 +15,37 @@
 </head>
 
 <body>
-    <header class="header">
-        <a href="index.html" class="header__logo">
-            <img src="imagenes/ecovica-logo.svg">
-        </a>
+    <header>
         <!--MENU-->
-        <nav  class="header__menu">
-            <ul data-animation="bonus" id="menu">
-                <li> <a href="index.html">Home</a>
-                </li>
-                <li> <a href="productos.html">Productos</a>
-                </li>
-                <li><a href="conocenos.html">Conocenos</a></li>
-                <li><a href="faq.html">Preguntas frecuentes</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+         <nav class="header">
+            <a href="index.html" class="header__logo">
+                <img src="imagenes/ecovica-logo.svg">
+            </a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul ul id="menu" data-animation="bonus" class="header__menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="conocenos.html" >Conocenos</a></li>
+                <li><a href="faq.html" >Preguntas Frecuentes</a></li>
+                <li><a href="contacto.html" >Contacto</a></li>
             </ul>
         </nav>
     </header>
-
 
 <!--PRODUCTOS--------------------------------------------------------------------->
 
 
 <div>
 
-     <h1 class="TituloSecciones animate__animated animate__fadeIn">__ Productos</h1>
+     <h1 class="tituloSecciones animate__animated animate__fadeIn">__ Productos</h1>
 
-    <section class="ProductosContenidoGrid">
-            <div class="ProductosContenido">
+    <section class="productosContenidoGrid">
+            <div class="productosContenido">
 
                 <!--JABON SOÑIDO -------->
-                <div id="producto1" class="ContenedorProductos animate__animated animate__fadeInUp">
-                    <div class="ImagenesProductos">
+                <div id="producto1" class="contenedorProductos animate__animated animate__fadeInUp">
+                    <div class="imagenesProductos">
                         <img src="imagenes/jabon-solido-index.jpg" alt="Jabón sólido">
                     </div>
                     <div class="container">
@@ -70,9 +69,9 @@
                 </div>
 
                 <!--CREMA CORPORAL -------->
-                <div id="producto2" class="ContenedorProductos animate__animated animate__fadeInDown">
-                    <div class="ImagenesProductos">
-                        <img src="imagenes/crema-corporal.jpeg" alt="Crema corporal">
+                <div id="producto2" class="contenedorProductos animate__animated animate__fadeInDown">
+                    <div class="imagenesProductos">
+                        <img src="imagenes/crema-corporal.jpg" alt="Crema corporal">
                     </div>
                     <div class="container">
                         <div class="overlay">
@@ -95,8 +94,8 @@
                 </div>
 
                  <!--PERFUME NATURAL -------->
-                <div id="producto3" class="ContenedorProductos animate__animated animate__fadeInUp">
-                    <div class="ImagenesProductos">
+                <div id="producto3" class="contenedorProductos animate__animated animate__fadeInUp">
+                    <div class="imagenesProductos">
                         <img src="imagenes/perfume-natural.jpeg" alt="Perfume natural">
                     </div>
                     <div class="container">
@@ -119,8 +118,8 @@
                 </div>
 
                 <!--EXTRACTO DE CALENDULA -------->
-                <div id="producto4" class="ContenedorProductos animate__animated animate__fadeInUp">
-                    <div class="ImagenesProductos">
+                <div id="producto4" class="contenedorProductos animate__animated animate__fadeInUp">
+                    <div class="imagenesProductos">
                         <img src="imagenes/sanitizante-de-manos.jpg" alt="Extracto de caléndula">
                     </div>
                     <div class="container">
@@ -144,15 +143,15 @@
                 </div>
 
                 <!--REVIEW 1 --------> 
-                <div id="producto5" class="CartaTexto animate__animated animate__fadeInDown">
-                    <h4 class="CartaTexto__titulo">Probé la crema hidratante y enseguida noté la diferencia con las cremas comerciales. Mi piel ya no se brota con el sol.</h4>
-                    <p class="CartaTexto__parrafo">- Carolina Werner -</p>
+                <div id="producto5" class="cartaTexto animate__animated animate__fadeInDown">
+                    <h4 class="cartaTexto__titulo">Probé la crema hidratante y enseguida noté la diferencia con las cremas comerciales. Mi piel ya no se brota con el sol.</h4>
+                    <p class="cartaTexto__parrafo">- Carolina Werner -</p>
                 </div>
 
 
                 <!--ACONDICIONADOR SOLIDO -------->
-                <div id="producto6" class="ContenedorProductos animate__animated animate__fadeInUp">
-                    <div class="ImagenesProductos">
+                <div id="producto6" class="contenedorProductos animate__animated animate__fadeInUp">
+                    <div class="imagenesProductos">
                         <img src="imagenes/acondicionador-solido.jpeg" alt="Acondicionador sólido">
                     </div>
                     <div class="container">
@@ -176,8 +175,8 @@
                 </div>
 
                 <!--COPITA  -------->
-                <div id="producto7" class="ContenedorProductos animate__animated animate__fadeInUp">
-                    <div class="ImagenesProductos">
+                <div id="producto7" class="contenedorProductos animate__animated animate__fadeInUp">
+                    <div class="imagenesProductos">
                         <img src="imagenes/copita.jpeg" alt="Copita">
                     </div>
                     <div class="container">
@@ -200,8 +199,8 @@
                 </div>
 
                 <!--CEPILLO DE BAMBOO-------->
-                <div id="producto8" class="ContenedorProductos animate__animated animate__fadeInDown">
-                    <div class="ImagenesProductos animate__animated animate__fadeInUp">
+                <div id="producto8" class="contenedorProductos animate__animated animate__fadeInDown">
+                    <div class="imagenesProductos animate__animated animate__fadeInUp">
                         <img src="imagenes/cepillo-bamboo.jpeg" alt="Cepillo de bamboo">
                     </div>
                     <div class="container">
@@ -224,8 +223,8 @@
                 </div>
 
                 <!--DESODORANTE SOLIDO-------->      
-                <div id="producto9" class="ContenedorProductos animate__animated animate__fadeInUp">
-                    <div class="ImagenesProductos">
+                <div id="producto9" class="contenedorProductos animate__animated animate__fadeInUp">
+                    <div class="imagenesProductos">
                         <img src="imagenes/desodorante.jpeg" alt="Desodorante sólido">
                     </div>
                     <div class="container">
@@ -248,14 +247,14 @@
                 </div>
 
                 <!--REVIEW 2-------->
-                <div id="producto10" class="CartaTexto animate__animated animate__fadeInDown">
-                    <h4 class="CartaTexto__titulo">Hace tres meses probé los envoltorios ecológicos y me volví fan. ¡Hacen más linda mi heladera y son muy prácticos!</h4>
-                    <p class="CartaTexto__parrafo">- Natalia López Guerra -</p>
+                <div id="producto10" class="cartaTexto animate__animated animate__fadeInDown">
+                    <h4 class="cartaTexto__titulo">Hace tres meses probé los envoltorios ecológicos y me volví fan. ¡Hacen más linda mi heladera y son muy prácticos!</h4>
+                    <p class="cartaTexto__parrafo">- Natalia López Guerra -</p>
                 </div>
 
                 <!--ENVOLTORIO ECOLOGICO-------->
-                <div id="producto11" class="ContenedorProductos animate__animated animate__fadeInDown">
-                    <div class="ImagenesProductos">
+                <div id="producto11" class="contenedorProductos animate__animated animate__fadeInDown">
+                    <div class="imagenesProductos">
                         <img src="imagenes/wrap.jpeg" alt="Envoltorio ecológico">
                     </div>
                     <div class="container">
@@ -278,9 +277,9 @@
                 </div>
 
                 <!--REVIEW 3-------->
-                <div id="producto12" class="CartaTexto animate__animated animate__fadeInDown">
-                    <h4 class="CartaTexto__titulo">Probé el acondicionador sólido y me dejó el pelo muy suave (yo lo suelo tener muy seco). </h4>
-                    <p class="CartaTexto__parrafo">- Josefina Seis -</p>
+                <div id="producto12" class="cartaTexto animate__animated animate__fadeInDown">
+                    <h4 class="cartaTexto__titulo">Probé el acondicionador sólido y me dejó el pelo muy suave (yo lo suelo tener muy seco). </h4>
+                    <p class="cartaTexto__parrafo">- Josefina Seis -</p>
                 </div>
                 
             </div>
@@ -290,23 +289,19 @@
 </div>
 
 
-
-
-
     
-
-<!--FOOTER--> 
-    <footer id="footer">
-        <div class="contacto">
-            <h3>Sigamos conectados</h3>
-            <div class="contacto__linea"></div>
-            <div class="contacto__redes">
-            <a class="contacto__iconos"href="https://www.instagram.com/mecovica/" ><img src="imagenes/instagram.svg" alt="Logo de Instagram"></a>
-            <a class="contacto__iconos" href="https://www.tiktok.com/@mecovica" ><img src="imagenes/tik-tok.svg" alt="Logo de Tik Tok"> </a>
-            </div>
+<!--FOOTER-->
+<footer id="footer">
+    <div class="contacto">
+        <h3>Sigamos conectados</h3>
+        <div class="contacto__linea"></div>
+        <div class="contacto__redes">
+        <a class="contacto__iconos"href="https://www.instagram.com/mecovica/" target="_blank" ><img src="imagenes/instagram.svg" alt="Logo de Instagram"></a>
+        <a class="contacto__iconos" href="https://www.tiktok.com/@mecovica"target="_blank"><img src="imagenes/tik-tok.svg" alt="Logo de Tik Tok"> </a>
         </div>
-        <p>Copyright Ecovica - 2021. Todos los derechos reservados.</p>
-    </footer> 
+    </div>
+    <p>Copyright Ecovica - 2021. Todos los derechos reservados. Alumna: Victoria Ciordia</p>
+</footer> 
 
 </body>
 </html>
