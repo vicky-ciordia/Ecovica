@@ -347,7 +347,7 @@
   #preguntasFrecuentesPagina .tituloSecciones, #preguntasFrecuentesPagina h4, #preguntasFrecuentesPagina p {
     color: #F2EEE8; }
   #preguntasFrecuentesPagina .tituloSecciones {
-    margin: 1rem 0 1rem 0;
+    margin: 1rem 0 4rem 0;
     padding: 1rem 0;
     height: 20%; }
   #preguntasFrecuentesPagina .preguntasFrecuentesEncabezado {
@@ -433,6 +433,8 @@
 /**RESPONSIVE*/
 /**MAX 1200–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media only screen and (max-width: 1200px) {
+  #preguntasFrecuentesPagina .tituloSecciones {
+    margin: 1rem 0 1rem 0; }
   #preguntasFrecuentesPagina .preguntasFrecuentesContenedor {
     padding: 5rem 6rem 4rem; }
     #preguntasFrecuentesPagina .preguntasFrecuentesContenedor .accordion-body {
