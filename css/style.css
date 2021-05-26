@@ -874,6 +874,7 @@ box-shadow: none;
 
 #error404 {
     padding: 9rem 4rem 4rem 4rem;
+    height: 70vh;
 }
 
 #error404 h2{
