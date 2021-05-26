@@ -433,7 +433,7 @@ box-shadow: none;
     font-size: 3.5vw;
     margin: 0;
     padding: 0;
-    color: white;
+    color:#F2EEE8;
     text-align:left;
 }
 
@@ -486,6 +486,7 @@ box-shadow: none;
 
 #novedades .botonVerMas{
     max-width: 30%;
+    margin-top: 2rem;
 }
 
 
@@ -1343,6 +1344,7 @@ box-shadow: none;
 
 #error404 {
     padding: 9rem 2rem 4rem 2rem;
+    height: 100%;
 }
 
 #error404 .fraseContacto{
